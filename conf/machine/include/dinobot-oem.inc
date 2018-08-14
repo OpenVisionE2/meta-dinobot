@@ -17,7 +17,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     kernel-module-ohci-platform \
 "
 
-MACHINE_FEATURES += "videoenhancement switchoff hdmicec 7segment textlcd skins1080 blindscan-tbs emmc mmc alsa hbbtv-browser-webkit qtstalker"
+MACHINE_FEATURES += "videoenhancement switchoff hdmicec 7segment textlcd skins1080 blindscan-tbs emmc mmc alsa hbbtv-browser-webkit qtstalker multitranscoding hiaccel"
 #MACHINE_FEATURES += "kodi"
 
 IMAGE_CLASSES  += "dinobot-emmc_image"
