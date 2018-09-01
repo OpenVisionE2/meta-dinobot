@@ -11,7 +11,7 @@ PV = "${SRCDATE}"
 
 inherit lib_package pkgconfig
 
-SRC_URI = "http://source.mynonpublic.com/dinobot/${MACHINE}-libs-${SRCDATE}.zip"
+SRC_URI = "http://source.mynonpublic.com/dinobot/${MACHINETYPE}-libs-${SRCDATE}.zip"
 
 S = "${WORKDIR}/hilib"
 
