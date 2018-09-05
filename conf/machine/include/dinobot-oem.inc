@@ -1,8 +1,6 @@
 # We know about rtc
 include conf/machine/include/build-extras.inc
 
-DISTRO_FEATURES_remove = "x11 wayland"
-
 KERNEL_FILE = "kernel.bin"
 ROOTFS_FILE = "rootfs.tar.bz2"
 
