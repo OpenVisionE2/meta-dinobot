@@ -1,11 +1,10 @@
 KV = "4.4.35"
-SRCDATE = "20180813"
+SRCDATE = "20180907"
 MACHINETYPE = "u53"
-KOFILES = "kds mali_kbase hi_dbe hi_tuner hi_sci hi_pmoc tntfs"
 
-require dinobot-dvb-modules.inc
+require dinobot-dvb-modules2.inc
 
-SRC_URI[md5sum] = "50fadc7686d86edf7d107f35a8505fe6"
-SRC_URI[sha256sum] = "ddbcff503d80bf4811ac912ecd4e18f0c4976448c078800529f640287f885a93"
+SRC_URI[md5sum] = "0daee644f9c65d9c950a5393aa3438bb"
+SRC_URI[sha256sum] = "9e61afa790561f23c617461734fa32cdc60c878bcc23dbeaca9ced6916cdf04a"
 
 COMPATIBLE_MACHINE = "dinobot4kmini"

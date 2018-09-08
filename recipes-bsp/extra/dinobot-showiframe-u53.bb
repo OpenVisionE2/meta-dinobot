@@ -6,7 +6,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "dinobot4kmini"
 
-SRCDATE = "20180813"
+SRCDATE = "20180907"
 
 PV = "${SRCDATE}"
 
@@ -28,5 +28,5 @@ do_package_qa() {
 
 FILES_${PN}  = "${bindir}/showiframe"
 
-SRC_URI[md5sum] = "ef2b5dd229eecad3034f0a2235048605"
-SRC_URI[sha256sum] = "df38e9fb4fb207e636f42597d430ec714d633177f046fbc9e6528b162c0d1759"
+SRC_URI[md5sum] = "fe083067e8db1e22f3760c4f9b51ceeb"
+SRC_URI[sha256sum] = "a773043e2e5f3479e91d093f463b294e5bce0d7c8852c383be268fced6744786"
