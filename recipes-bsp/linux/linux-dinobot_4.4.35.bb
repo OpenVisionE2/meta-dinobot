@@ -32,6 +32,7 @@ RPROVIDES_${KERNEL_PACKAGE_NAME}-image = "kernel-image-${KERNEL_VERSION}"
 
 SRC_URI = "http://source.mynonpublic.com/dinobot/dinobot-linux-${PV}-${SRCDATE}.tar.gz;name=newgeneration \
     file://defconfig \
+    ${@bb.utils.contains('SOC_FAMILY', 'hisi3798mv200', 'file://0001-mmc-switch-1.8V.patch' , '', d)} \
     file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
     file://0003-uaccess-dont-mark-register-as-const.patch \
     file://0004-makefile-disable-warnings.patch \
