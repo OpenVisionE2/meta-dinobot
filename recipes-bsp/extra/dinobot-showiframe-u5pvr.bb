@@ -4,7 +4,7 @@ PRIORITY = "optional"
 LICENSE = "CLOSED"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-COMPATIBLE_MACHINE = "dinobot4kse"
+COMPATIBLE_MACHINE = "dinobot4kse|ferguson4k"
 
 SRCDATE = "20180510"
 
