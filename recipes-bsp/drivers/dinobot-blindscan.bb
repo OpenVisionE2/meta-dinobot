@@ -3,6 +3,8 @@ SECTION = "base"
 PRIORITY = "optional"
 LICENSE = "CLOSED"
 
+COMPATIBLE_MACHINE = "anadol4k|axashis4kcombo|axashis4kcomboplus|dinobot4k|dinobot4kl|dinobot4kplus|mediabox4k"
+
 PROVIDES += "virtual/blindscan-dvbs"
 RPROVIDES_${PN} += "virtual/blindscan-dvbs"
 
