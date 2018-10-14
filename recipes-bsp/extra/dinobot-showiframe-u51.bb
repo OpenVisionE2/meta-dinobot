@@ -2,6 +2,7 @@ SUMMARY = "showiframe for dinobot Model ${MACHINE}"
 SECTION = "base"
 PRIORITY = "optional"
 LICENSE = "CLOSED"
+RDEPENDS_${PN} = "libjpeg-turbo"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "axashis4kcombo|dinobot4kl"

@@ -13,6 +13,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     kernel-module-xhci-plat-hcd \
     kernel-module-ehci-platform \
     kernel-module-ohci-platform \
+    dinobot-lib-helper \
 "
 
 MACHINE_FEATURES += "videoenhancement switchoff hdmicec 7segment textlcd blindscan-tbs emmc mmc alsa multitranscoding hiaccel"
@@ -62,8 +63,6 @@ IMAGE_CMD_dinobotemmc_append = "\
     zip ${IMAGE_NAME}_mmc.zip ${IMAGEDIR}/*; \
     rm -f ${DEPLOY_DIR_IMAGE}/*.ext4; \
     rm -f ${DEPLOY_DIR_IMAGE}/*.manifest; \
-    rm -f ${DEPLOY_DIR_IMAGE}/.ext4; \
-    rm -f ${DEPLOY_DIR_IMAGE}/.manifest; \
     rm -f -f ${DEPLOY_DIR_IMAGE}/*.json; \
     rm -Rf ${IMAGEDIR}; \
     "
