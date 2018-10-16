@@ -28,7 +28,6 @@ DEFAULTTUNE = "cortexa15hf-neon-vfpv4"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-dinobot"
 PREFERRED_VERSION_linux-dinobot = "4.4.35"
-PREFERRED_PROVIDER_virtual/blindscan-dvbs = "dinobot-blindscan"
 PREFERRED_VERSION_directfb = "1.7.7"
 
 require conf/machine/include/tune-cortexa15.inc

@@ -3,19 +3,12 @@ SECTION = "base"
 PRIORITY = "optional"
 LICENSE = "CLOSED"
 
-COMPATIBLE_MACHINE = "anadol4k|axashis4kcombo|axashis4kcomboplus|dinobot4k|dinobot4kl|dinobot4kplus|mediabox4k"
-
 PROVIDES += "virtual/blindscan-dvbs"
 RPROVIDES_${PN} += "virtual/blindscan-dvbs"
 
-SRCDATE = "20181008"
-
 PV = "${SRCDATE}"
 
-SRC_URI  = "http://source.mynonpublic.com/dinobot/dinobot-blindscan-${SRCDATE}.zip"
-
-SRC_URI[md5sum] = "343e65906a17f677c97c54e927c9b4fb"
-SRC_URI[sha256sum] = "abcd6c4eab116c558afb28a6893d1be2bc1b983ded2796205fdf53e90bd7d6ea"
+SRC_URI  = "http://source.mynonpublic.com/dinobot/dinobot-blindscan-${SRCDATE}-${MACHINETYPE}.zip"
 
 S = "${WORKDIR}"
 
