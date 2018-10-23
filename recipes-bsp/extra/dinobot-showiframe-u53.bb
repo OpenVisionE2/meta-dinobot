@@ -17,6 +17,9 @@ RCONFLICTS_${PN} = "showiframe"
 
 SRC_URI = "http://source.mynonpublic.com/dinobot/u53-showiframe-${SRCDATE}.tar.gz"
 
+SRC_URI[md5sum] = "fe083067e8db1e22f3760c4f9b51ceeb"
+SRC_URI[sha256sum] = "a773043e2e5f3479e91d093f463b294e5bce0d7c8852c383be268fced6744786"
+
 S = "${WORKDIR}"
 
 do_install() {
@@ -28,6 +31,3 @@ do_package_qa() {
 }
 
 FILES_${PN}  = "${bindir}/showiframe"
-
-SRC_URI[md5sum] = "fe083067e8db1e22f3760c4f9b51ceeb"
-SRC_URI[sha256sum] = "a773043e2e5f3479e91d093f463b294e5bce0d7c8852c383be268fced6744786"

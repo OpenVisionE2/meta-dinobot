@@ -1,10 +1,10 @@
 KV = "4.4.35"
-SRCDATE = "20181011"
+SRCDATE = "20181022"
 MACHINETYPE = "u5"
 
 require dinobot-dvb-modules2.inc
 
-SRC_URI[md5sum] = "89aaa456e27ff3e70ef56ed2a2b65628"
-SRC_URI[sha256sum] = "4a1e0fb81e7ec78cdaa17315b92a014ab441254232a9d5f66157d9ff573da4ea"
+SRC_URI[md5sum] = "6db41cfb1a2d5b4b20dfd99bfd8965a1"
+SRC_URI[sha256sum] = "8e04c8b32777965994872ed07c3b2fee43574e0eef078bf102af69c0fe1a6ad8"
 
 COMPATIBLE_MACHINE = "mediabox4k|dinobot4k|anadol4k"
