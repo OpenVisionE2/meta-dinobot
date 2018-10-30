@@ -5,7 +5,7 @@ LICENSE = "CLOSED"
 RDEPENDS_${PN} = "libjpeg-turbo"
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-COMPATIBLE_MACHINE = "axashis4kcombo|dinobot4kl"
+COMPATIBLE_MACHINE = "axashis4kcombo|dinobot4kl|anadol4kcombo|anadol4kv2"
 
 SRCDATE = "20181022"
 
