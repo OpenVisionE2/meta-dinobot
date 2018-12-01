@@ -7,7 +7,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "axashis4kcomboplus|dinobot4kplus"
 
-SRCDATE = "20181115"
+SRCDATE = "20181130"
 
 PV = "${SRCDATE}"
 
@@ -17,8 +17,8 @@ RCONFLICTS_${PN} = "showiframe"
 
 SRC_URI = "http://source.mynonpublic.com/dinobot/u52-showiframe-${SRCDATE}.tar.gz"
 
-SRC_URI[md5sum] = "4d3539f554bb572fe90821bb7b7e6d48"
-SRC_URI[sha256sum] = "b67165293812a7207819368e582a2fc359fdeb3181e4d951ce2b07857520b635"
+SRC_URI[md5sum] = "d468926772037572db84a1f08246de0a"
+SRC_URI[sha256sum] = "0eef7d78ae423c88771da35077b21d866ce8a9f12f27c086b376a99b8b7cdd1a"
 
 S = "${WORKDIR}"
 

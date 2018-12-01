@@ -1,8 +1,8 @@
-SRCDATE = "20181102"
+SRCDATE = "20181128"
 MACHINETYPE = "u52"
 require dinobot-libs2.inc
 
-SRC_URI[md5sum] = "b7d8f16506079524a7be7b1c848ca7da"
-SRC_URI[sha256sum] = "7bab671e9650143a51b589a1374352320c9cee596c63fec296dd5f28cfc1b96f"
+SRC_URI[md5sum] = "cebd07d35f890528bb41da6ae22aa8d6"
+SRC_URI[sha256sum] = "95f91143f2cd0bc80ee90317abcee4ebc5738a3110d083e467625c23423a8eec"
 
 COMPATIBLE_MACHINE = "axashis4kcomboplus|dinobot4kplus"
