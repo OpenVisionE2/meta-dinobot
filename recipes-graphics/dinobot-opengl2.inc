@@ -7,7 +7,7 @@ PACKAGE_ARCH := "${MACHINE_ARCH}"
 PROVIDES = "virtual/libgles1 virtual/libgles2 virtual/egl"
 RPROVIDES_${PN} = "virtual/libgles1 virtual/libgles2 virtual/egl libEGL.so libGLESv2.so libmali.so"
 
-SRC_URI = "http://source.mynonpublic.com/dinobot/${MACHINE}-opengl-armhf-${SRCDATE}.zip \
+SRC_URI = "http://source.mynonpublic.com/dinobot/${MACHINETYPE}-opengl-armhf-${SRCDATE}.zip \
  file://libm-2.27.so.zip \
 "
 
