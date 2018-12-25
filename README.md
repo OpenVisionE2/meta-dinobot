@@ -1,2 +1,2 @@
 # meta-dinobot
-DinoBot BSP layer for PLi's OE
+DinoBot BSP layer for Open Vision
