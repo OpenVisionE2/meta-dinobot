@@ -1,0 +1,8 @@
+SRCDATE = "20190108"
+MACHINETYPE = "u55"
+require dinobot-libs2.inc
+
+SRC_URI[md5sum] = "1f382b28ec25b63a6374c6e4402d06c4"
+SRC_URI[sha256sum] = "c24f165d9b553c878265ddd162a634dbe81fea53d366d63b67c6806503979d70"
+
+COMPATIBLE_MACHINE = "dinobotu55"
