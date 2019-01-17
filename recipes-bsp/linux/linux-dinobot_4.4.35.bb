@@ -13,7 +13,7 @@ SRCDATE_ferguson4k = "20180502"
 
 inherit kernel machine_kernel_pr
 
-MACHINE_KERNEL_PR_append = ".5"
+MACHINE_KERNEL_PR_append = ".6"
 
 SRC_URI[newgeneration.md5sum] = "f0dd43d5adc013d0dd89061e3249855a"
 SRC_URI[newgeneration.sha256sum] = "32a8caabfba94d81b649de8dd62cc5b02e1d750cad8d2676e98e242a944273a3"
