@@ -16,14 +16,9 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 MACHINE_FEATURES += "videoenhancement switchoff hdmicec 7segment textlcd blindscan-tbs emmc mmc alsa multitranscoding hiaccel"
 #MACHINE_FEATURES += "hbbtv-browser-webkit qtstalker"
 
-TARGET_ARCH = "arm"
-DEFAULTTUNE = "cortexa15hf-neon-vfpv4"
-
 PREFERRED_PROVIDER_virtual/kernel = "linux-dinobot"
 PREFERRED_VERSION_linux-dinobot = "4.4.35"
 PREFERRED_VERSION_directfb = "1.7.7"
-
-require conf/machine/include/tune-cortexa15.inc
 
 MACHINE_EXTRA_RRECOMMENDS += "\
     gstreamer1.0-plugin-dvbmediasink \

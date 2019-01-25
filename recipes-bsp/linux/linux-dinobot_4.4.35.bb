@@ -4,7 +4,7 @@ LICENSE = "GPLv2"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-COMPATIBLE_MACHINE = "anadol4k|axashis4kcombo|axashis4kcomboplus|dinobot4k|dinobot4kl|dinobot4kmini|dinobot4kplus|dinobot4kse|mediabox4k|ferguson4k|anadol4kcombo|anadol4kv2|dinobot4kpro|dinobotu55"
+COMPATIBLE_MACHINE = "anadol4k|axashis4kcombo|axashis4kcomboplus|dinobot4k|dinobot4kl|dinobot4kmini|dinobot4kplus|dinobot4kse|mediabox4k|ferguson4k|anadol4kcombo|anadol4kv2|dinobot4kpro|dinobotu55|dinoboth265"
 
 KERNEL_RELEASE = "4.4.35"
 SRCDATE = "20180828"
@@ -13,7 +13,7 @@ SRCDATE_ferguson4k = "20180502"
 
 inherit kernel machine_kernel_pr
 
-MACHINE_KERNEL_PR_append = ".6"
+MACHINE_KERNEL_PR_append = ".7"
 
 SRC_URI[newgeneration.md5sum] = "f0dd43d5adc013d0dd89061e3249855a"
 SRC_URI[newgeneration.sha256sum] = "32a8caabfba94d81b649de8dd62cc5b02e1d750cad8d2676e98e242a944273a3"
@@ -36,6 +36,7 @@ RPROVIDES_${KERNEL_PACKAGE_NAME}-image = "kernel-image-${KERNEL_VERSION}"
 
 SRC_URI = "http://source.mynonpublic.com/dinobot/dinobot-linux-${PV}-${SRCDATE}.tar.gz;name=newgeneration \
     file://defconfig \
+    file://410dts.patch \
     file://0001-mmc-switch-1.8V.patch \
     file://0002-ieee80211-increase-scan-result-expire-time.patch \
     file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
