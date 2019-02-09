@@ -50,6 +50,7 @@ SRC_URI_dinobot4kse = "http://source.mynonpublic.com/dinobot/dinobot-linux-${PV}
     file://sdio-platform.patch \
     file://accelmem.patch \
     file://cma.patch \
+    file://ahci-clock.patch \
     ${@bb.utils.contains('SOC_FAMILY', 'hisi3798mv200', 'file://led.patch' , '', d)} \
 "
 
@@ -58,6 +59,7 @@ SRC_URI_ferguson4k = "http://source.mynonpublic.com/dinobot/dinobot-linux-${PV}-
     file://sdio-platform.patch \
     file://accelmem.patch \
     file://cma.patch \
+    file://ahci-clock.patch \
     ${@bb.utils.contains('SOC_FAMILY', 'hisi3798mv200', 'file://led.patch' , '', d)} \
 "
 
