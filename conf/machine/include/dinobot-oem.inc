@@ -13,7 +13,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     dinobot-lib-helper \
 "
 
-MACHINE_FEATURES += "videoenhancement switchoff hdmicec 7segment textlcd blindscan-tbs emmc mmc alsa multitranscoding hiaccel"
+MACHINE_FEATURES += "videoenhancement switchoff hdmicec textlcd blindscan-tbs emmc mmc alsa multitranscoding hiaccel"
 #MACHINE_FEATURES += "hbbtv-browser-webkit qtstalker"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-dinobot"
