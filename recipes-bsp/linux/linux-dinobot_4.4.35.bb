@@ -4,7 +4,7 @@ LICENSE = "GPLv2"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-COMPATIBLE_MACHINE = "anadol4k|axashis4kcombo|axashis4kcomboplus|dinobot4k|dinobot4kl|dinobot4kmini|dinobot4kplus|dinobot4kse|mediabox4k|ferguson4k|anadol4kcombo|anadol4kv2|dinobot4kpro|dinobotu55|dinoboth265"
+COMPATIBLE_MACHINE = "anadol4k|axashis4kcombo|axashis4kcomboplus|dinobot4k|dinobot4kl|dinobot4kmini|dinobot4kplus|dinobot4kse|mediabox4k|ferguson4k|anadol4kcombo|anadol4kv2|dinobot4kpro|dinobotu55|dinoboth265|axashistwin"
 
 KERNEL_RELEASE = "4.4.35"
 SRCDATE = "20180828"
