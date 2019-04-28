@@ -1,6 +1,8 @@
 # We know about rtc
 include conf/machine/include/build-extras.inc
 
+BOX_BRAND = "dinobot"
+
 KERNEL_MODULE_AUTOLOAD += "xhci-plat-hcd"
 KERNEL_MODULE_AUTOLOAD += "ehci-platform"
 KERNEL_MODULE_AUTOLOAD += "ohci-platform"
