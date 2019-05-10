@@ -1,7 +1,4 @@
-SUMMARY = "helper for dinobot"
-SECTION = "base"
-PRIORITY = "optional"
-LICENSE = "CLOSED"
+require conf/license/license-gplv2.inc
 
 PV = "1.0"
 
