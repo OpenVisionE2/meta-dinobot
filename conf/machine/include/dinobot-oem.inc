@@ -14,6 +14,10 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     kernel-module-ohci-platform \
     dinobot-pvr \
     dinobot-lib-helper \
+    rtl8192eu \
+    firmware-rtl8192eu \
+    rtl8822bu \
+    rt8188fu \
 "
 
 MACHINE_FEATURES += "videoenhancement switchoff hdmicec textlcd blindscan-tbs emmc mmc alsa multitranscoding hiaccel"
