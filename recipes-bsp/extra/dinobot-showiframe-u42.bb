@@ -7,7 +7,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "anadolprohd5"
 
-SRCDATE = "20190521"
+SRCDATE = "20190523"
 
 PV = "${SRCDATE}"
 
@@ -17,8 +17,8 @@ RCONFLICTS_${PN} = "showiframe"
 
 SRC_URI = "http://source.mynonpublic.com/dinobot/u42-showiframe-${SRCDATE}.tar.gz"
 
-SRC_URI[md5sum] = "67fa999232a82ada1c968004e9650e3c"
-SRC_URI[sha256sum] = "394034e935122cea72bc840f1e0abc18a54be9b29ca92a8cca2ec638a6f97b4f"
+SRC_URI[md5sum] = "551518e3c899e03f10d564f5dc477760"
+SRC_URI[sha256sum] = "2ea278b884dfb3fa87ced0886447066de07e674ce8440d6e8a4a6e2b05a44e03"
 
 S = "${WORKDIR}"
 

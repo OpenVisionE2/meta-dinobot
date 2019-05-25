@@ -18,9 +18,10 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     firmware-rtl8192eu \
     rtl8822bu \
     rt8188fu \
+    firmware-rt8188fu \
 "
 
-MACHINE_FEATURES += "videoenhancement switchoff hdmicec textlcd blindscan-tbs emmc mmc alsa multitranscoding hiaccel"
+MACHINE_FEATURES += "videoenhancement switchoff hdmicec blindscan-tbs emmc mmc alsa multitranscoding hiaccel"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-dinobot"
 PREFERRED_VERSION_linux-dinobot = "4.4.35"
