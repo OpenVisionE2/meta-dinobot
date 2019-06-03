@@ -1,6 +1,5 @@
 KV = "4.4.35"
 SRCDATE = "20190509"
-MACHINETYPE = "u54"
 
 require dinobot-dvb-modules2.inc
 

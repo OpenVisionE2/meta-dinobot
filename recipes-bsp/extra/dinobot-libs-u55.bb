@@ -1,5 +1,4 @@
 SRCDATE = "20190509"
-MACHINETYPE = "u55"
 require dinobot-libs2.inc
 
 SRC_URI[md5sum] = "c7ccac56aa055150093c71e88ec09106"
