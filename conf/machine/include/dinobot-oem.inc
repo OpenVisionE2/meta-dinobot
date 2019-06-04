@@ -41,3 +41,6 @@ require conf/machine/include/soc-family.inc
 DVBMEDIASINK_CONFIG = "--with-h265 --with-vb8 --with-vb9 --with-spark --with-wma --with-wmv --with-pcm --with-dts --with-eac3"
 
 PREFERRED_PROVIDER_virtual/enigma2-mediaservice ?= "enigma2-plugin-systemplugins-servicehisilicon"
+
+DEPENDS_append_pn-enigma2 = " dinobot-libs-${MACHINETYPE} "
+RDEPENDS_append_pn-enigma2 = " dinobot-libs-${MACHINETYPE} "
