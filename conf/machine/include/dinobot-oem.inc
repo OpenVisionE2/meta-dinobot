@@ -14,6 +14,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     kernel-module-ohci-platform \
     dinobot-pvr \
     dinobot-lib-helper \
+    dinobot-libs-${MACHINETYPE} \
     rtl8192eu \
     firmware-rtl8192eu \
     rtl8822bu \
@@ -43,4 +44,3 @@ DVBMEDIASINK_CONFIG = "--with-h265 --with-vb8 --with-vb9 --with-spark --with-wma
 PREFERRED_PROVIDER_virtual/enigma2-mediaservice ?= "enigma2-plugin-systemplugins-servicehisilicon"
 
 DEPENDS_append_pn-enigma2 = " dinobot-libs-${MACHINETYPE} "
-RDEPENDS_append_pn-enigma2 = " dinobot-libs-${MACHINETYPE} "
