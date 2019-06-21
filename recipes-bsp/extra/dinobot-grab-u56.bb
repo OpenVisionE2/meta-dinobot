@@ -15,7 +15,7 @@ RPROVIDES_${PN}  = "aio-grab"
 RREPLACES_${PN}  = "aio-grab"
 RCONFLICTS_${PN} = "aio-grab"
 
-SRC_URI = "http://source.mynonpublic.com/dinobot/u56-grab-${SRCDATE}.tar.gz"
+SRC_URI = "http://source.mynonpublic.com/dinobot/${MACHINETYPE}-grab-${SRCDATE}.tar.gz"
 
 SRC_URI[md5sum] = "f6967d0ba24ac47d536880c733bd8d7c"
 SRC_URI[sha256sum] = "ce1579b3396452ce807806148747fd924d0ee406a116135dfc9ed85eb059a98e"

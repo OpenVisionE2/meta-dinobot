@@ -15,7 +15,7 @@ RPROVIDES_${PN}  = "showiframe"
 RREPLACES_${PN}  = "showiframe"
 RCONFLICTS_${PN} = "showiframe"
 
-SRC_URI = "http://source.mynonpublic.com/dinobot/u5-showiframe-${SRCDATE}.tar.gz"
+SRC_URI = "http://source.mynonpublic.com/dinobot/${MACHINETYPE}-showiframe-${SRCDATE}.tar.gz"
 
 SRC_URI[md5sum] = "560d280ac291a03f6ba8ac75212eefa1"
 SRC_URI[sha256sum] = "44dc7494ec1b796ef29d91eff5f0f3eb6f6aa2b5e687c7159db268263342a5dd"

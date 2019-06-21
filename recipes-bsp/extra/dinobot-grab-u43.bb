@@ -5,9 +5,9 @@ LICENSE = "CLOSED"
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-COMPATIBLE_MACHINE = "axashis4kcomboplus|dinobot4kplus"
+COMPATIBLE_MACHINE = "dinobotu43"
 
-SRCDATE = "20190516"
+SRCDATE = "20190620"
 
 PV = "${SRCDATE}"
 
@@ -17,8 +17,8 @@ RCONFLICTS_${PN} = "aio-grab"
 
 SRC_URI = "http://source.mynonpublic.com/dinobot/${MACHINETYPE}-grab-${SRCDATE}.tar.gz"
 
-SRC_URI[md5sum] = "fe1d100930b74c1d4fcd1c8b2d7c09af"
-SRC_URI[sha256sum] = "21199b4c6d2bed28847940363bab56a6e4a1a60745ccbfacbf07f9bd177b4e74"
+SRC_URI[md5sum] = "3d4901fb2ed0516adf74599bdc39fa5e"
+SRC_URI[sha256sum] = "8beb533554c316af4da6c736105f4f92dfd654b0ed59cd159077344b3e4690fc"
 
 S = "${WORKDIR}"
 
