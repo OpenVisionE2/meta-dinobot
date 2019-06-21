@@ -7,7 +7,7 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 
 COMPATIBLE_MACHINE = "dinobotu55"
 
-SRCDATE = "20190509"
+SRCDATE = "20190619"
 
 PV = "${SRCDATE}"
 
@@ -17,8 +17,8 @@ RCONFLICTS_${PN} = "aio-grab"
 
 SRC_URI = "http://source.mynonpublic.com/dinobot/u55-grab-${SRCDATE}.tar.gz"
 
-SRC_URI[md5sum] = "6067e692f0e5aa1956e22b926b05dd7c"
-SRC_URI[sha256sum] = "372838192237106e6f000000add14cee286215e2ad70b2e85098a021c5e0dab6"
+SRC_URI[md5sum] = "84c226c327446a3df43a72a81dda4cc0"
+SRC_URI[sha256sum] = "d31ff3c0e712fb319ba61b905ba5f32bfd4c009a49fb93374ffbbc0dabb32aca"
 
 S = "${WORKDIR}"
 
