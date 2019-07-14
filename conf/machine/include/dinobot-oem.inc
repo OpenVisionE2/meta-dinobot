@@ -20,6 +20,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     rtl8822bu \
     rt8188fu \
     firmware-rt8188fu \
+    dinobot-partitions-${SOC_FAMILY} \
 "
 
 MACHINE_FEATURES += "videoenhancement switchoff hdmicec blindscan-tbs emmc mmc alsa multitranscoding hiaccel"
