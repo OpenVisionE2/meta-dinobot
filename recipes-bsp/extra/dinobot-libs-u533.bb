@@ -1,0 +1,8 @@
+SRCDATE = "20190718"
+
+require dinobot-libs2.inc
+
+SRC_URI[md5sum] = "37faaf2b059f1b146f36bb076d884906"
+SRC_URI[sha256sum] = "e5c90f3302d5902d5a77bfe8b464df62e9ef6f5a7e5f7045786436796b2474d2"
+
+COMPATIBLE_MACHINE = "arivatwin"

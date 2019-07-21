@@ -20,10 +20,11 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     rtl8822bu \
     rt8188fu \
     firmware-rt8188fu \
+    ${@bb.utils.contains('MACHINE_FEATURES', 'emmc', 'resizerootfs' , '', d)} \
     dinobot-partitions-${SOC_FAMILY} \
 "
 
-MACHINE_FEATURES += "videoenhancement switchoff hdmicec blindscan-tbs emmc mmc alsa multitranscoding hiaccel"
+MACHINE_FEATURES += "videoenhancement switchoff hdmicec blindscan-tbs alsa multitranscoding hiaccel"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-dinobot"
 PREFERRED_VERSION_linux-dinobot = "4.4.35"
