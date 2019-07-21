@@ -20,9 +20,6 @@ PREFERRED_RPROVIDER_aio-grab = "dinobot-grab-u41"
 
 MACHINETYPE = "u41"
 
-MTD_KERNEL = "mtd8"
-MTD_ROOTFS = "mtd9"
-
 SDCARDIMG = "no"
 
 MACHINE_FEATURES += "blindscan-dvbs textlcd"

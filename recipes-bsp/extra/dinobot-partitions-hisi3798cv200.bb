@@ -1,27 +1,12 @@
-SUMMARY = "Dinobot partitions files"
-SECTION = "base"
-PRIORITY = "required"
-LICENSE = "CLOSED"
-require conf/license/license-close.inc
-PACKAGE_ARCH = "${MACHINE_ARCH}"
+SRCDATE = "20190716"
+SRCDATE_dinobot4kse = "20180928"
+SRCDATE_ferguson4k = "20180928"
 
-SRCDATE = "20180509"
-PR = "${SRCDATE}"
+SRC_URI[md5sum] = "0cf44e0fc8dec29539f1a40af3a8a96f"
+SRC_URI[sha256sum] = "a55964f609c6ef521f5992ad8ace2d788d970c1df01f12dde36ab20729477eb1"
+SRC_URI[dinobot4kse.md5sum] = "85f6efc8ae5926dcb6391e09a58b1fbf"
+SRC_URI[dinobot4kse.sha256sum] = "1441e59ea5adb3577b8f6e7936cbffc249656d42a8fabc78033b37fc645e4548"
+SRC_URI[ferguson4k.md5sum] = "85f6efc8ae5926dcb6391e09a58b1fbf"
+SRC_URI[ferguson4k.sha256sum] = "1441e59ea5adb3577b8f6e7936cbffc249656d42a8fabc78033b37fc645e4548"
 
-S = "${WORKDIR}"
-
-SRC_URI = "http://source.mynonpublic.com/dinobot/${SOC_FAMILY}-partitions-${SRCDATE}.zip"
-
-do_configure[nostamp] = "1"
-
-do_install() {
-    install -d ${D}/usr/share
-    install -m 0644 ${S}/apploader.bin ${D}/usr/share/apploader.bin
-}
-
-FILES_${PN} = "/usr/share"
-
-SRC_URI[md5sum] = "2bb630608a9ef999fcbc79bcd9a28891"
-SRC_URI[sha256sum] = "343f9356d42c42a293b25f2778cfc7bfd1780a6c4ad2fe7140352a4ced20e46f"
-
-INSANE_SKIP_${PN} += "already-stripped"
+require dinobot-partitions.inc

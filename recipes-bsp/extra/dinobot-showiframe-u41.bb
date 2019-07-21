@@ -1,6 +1,6 @@
 require dinobot-showiframe.inc
 
-COMPATIBLE_MACHINE = "dinoboth265|axashistwin"
+COMPATIBLE_MACHINE = "dinoboth265|axashistwin|protek4kx1"
 
 SRCDATE = "20190628"
 

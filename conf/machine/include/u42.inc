@@ -27,5 +27,3 @@ SDCARD = "no"
 
 MACHINE_FEATURES += "RCA blindscan-dvbs"
 
-IMAGEDIR = "dinobot/u42"
-

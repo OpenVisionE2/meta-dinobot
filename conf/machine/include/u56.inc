@@ -20,8 +20,8 @@ PREFERRED_RPROVIDER_aio-grab = "dinobot-grab-u56"
 
 MACHINETYPE = "u56"
 
-MTD_KERNEL = "mmcblk0p10"
-MTD_ROOTFS = "mmcblk0p13"
+MTD_KERNEL = "mmcblk0p9"
+MTD_ROOTFS = "mmcblk0p10"
 
 SDCARDIMG = "no"
 

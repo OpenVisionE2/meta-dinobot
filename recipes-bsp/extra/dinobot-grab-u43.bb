@@ -1,6 +1,6 @@
 require dinobot-grab.inc
 
-COMPATIBLE_MACHINE = "dinobotu43"
+COMPATIBLE_MACHINE = "dinobotu43|turing"
 
 SRCDATE = "20190621"
 
