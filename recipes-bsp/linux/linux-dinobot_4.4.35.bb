@@ -41,6 +41,7 @@ SRC_URI = "http://source.mynonpublic.com/dinobot/dinobot-linux-${PV}-${SRCDATE}.
     file://0003-uaccess-dont-mark-register-as-const.patch \
     file://0004-makefile-disable-warnings.patch \
     file://0005-kallsyms-allow-bigger-ksym_name_len.patch \
+    ${@bb.utils.contains_any("MACHINE", "arivacombo arivatwin", "file://add_ap6255_deviceid.patch file://sdio-platform-new.patch", "", d)} \
 "
 
 SRC_URI_dinobot4kse = "http://source.mynonpublic.com/dinobot/dinobot-linux-${PV}-${SRCDATE}.tar.gz;name=${MACHINE} \
