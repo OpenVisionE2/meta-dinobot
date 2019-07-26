@@ -2,7 +2,7 @@ require dinobot-showiframe.inc
 
 COMPATIBLE_MACHINE = "dinoboth265|axashistwin|protek4kx1"
 
-SRCDATE = "20190715"
+SRCDATE = "20190726"
 
-SRC_URI[md5sum] = "043bd0ae23fe480726c455169729ea4f"
-SRC_URI[sha256sum] = "5b68df71a4e576b754d500a1f028d9e5ee51f4df4344d7d0816d36334deaf2b4"
+SRC_URI[md5sum] = "40bfef85a65a4ff6d00eece74af2d6ca"
+SRC_URI[sha256sum] = "73b4ba0edc0a5c77e27ad8b98543155103b085b8e38eba986fdfcf0cd379a41a"
