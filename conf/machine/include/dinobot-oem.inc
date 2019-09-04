@@ -17,7 +17,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     dinobot-libs-${MACHINETYPE} \
     rtl8192eu \
     firmware-rtl8192eu \
-    rtl8822bu \
+    rt8822bu \
     rt8188fu \
     firmware-rt8188fu \
     ${@bb.utils.contains('MACHINE_FEATURES', 'emmc', 'resizerootfs' , '', d)} \
