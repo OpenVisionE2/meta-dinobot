@@ -1,5 +1,6 @@
 KERNEL_FILE = "kernel.bin"
 ROOTFS_FILE = "rootfs.tar.bz2"
+MTD_BLACK  = "mmcblk0"
 
 IMAGE_CLASSES  += "dinobot-emmc_image"
 IMAGE_FSTYPES += "dinobotemmc"
