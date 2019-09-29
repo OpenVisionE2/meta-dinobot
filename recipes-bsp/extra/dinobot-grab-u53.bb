@@ -2,7 +2,7 @@ require dinobot-grab.inc
 
 COMPATIBLE_MACHINE = "dinobot4kmini"
 
-SRCDATE = "20190715"
+SRCDATE = "20190929"
 
-SRC_URI[md5sum] = "dfde6d28162cba33a5f6136c2cb95296"
-SRC_URI[sha256sum] = "e13adbc19a4145a83ab16bbca629bcc0824e7c9aac947fa32b5d36e14521c2c9"
+SRC_URI[md5sum] = "839425447857186db07438aac8cffb79"
+SRC_URI[sha256sum] = "601c027ea113dbb40e7ff92ebbfb81cd09ba8204be5f2d6f52bb5a467df891a8"
