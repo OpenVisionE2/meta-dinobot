@@ -25,4 +25,4 @@ SDCARDIMG = "no"
 
 MACHINE_FEATURES += "7segment"
 
-IMAGEDIR = "ferguson/atvcombo"
+IMAGEDIR = "e2/update"
