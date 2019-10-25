@@ -41,7 +41,6 @@ SRC_URI = "http://source.mynonpublic.com/dinobot/dinobot-linux-${PV}-${SRCDATE}.
     file://0003-uaccess-dont-mark-register-as-const.patch \
     file://0004-makefile-disable-warnings.patch \
     file://0005-kallsyms-allow-bigger-ksym_name_len.patch \
-    ${@bb.utils.contains_any("MACHINE", "arivacombo arivatwin", "file://add_ap6255_deviceid.patch file://sdio-platform-new.patch", "", d)} \
 "
 
 SRC_URI_dinobot4kse = "http://source.mynonpublic.com/dinobot/dinobot-linux-${PV}-${SRCDATE}.tar.gz;name=${MACHINE} \
@@ -51,6 +50,10 @@ SRC_URI_dinobot4kse = "http://source.mynonpublic.com/dinobot/dinobot-linux-${PV}
     file://cma.patch \
     file://ahci-clock.patch \
     ${@bb.utils.contains('SOC_FAMILY', 'hisi3798mv200', 'file://led.patch' , '', d)} \
+    file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
+    file://0003-uaccess-dont-mark-register-as-const.patch \
+    file://0004-makefile-disable-warnings.patch \
+    file://0005-kallsyms-allow-bigger-ksym_name_len.patch \
 "
 
 SRC_URI_ferguson4k = "http://source.mynonpublic.com/dinobot/dinobot-linux-${PV}-${SRCDATE}.tar.gz;name=${MACHINE} \
@@ -60,6 +63,10 @@ SRC_URI_ferguson4k = "http://source.mynonpublic.com/dinobot/dinobot-linux-${PV}-
     file://cma.patch \
     file://ahci-clock.patch \
     ${@bb.utils.contains('SOC_FAMILY', 'hisi3798mv200', 'file://led.patch' , '', d)} \
+    file://0002-log2-give-up-on-gcc-constant-optimizations.patch \
+    file://0003-uaccess-dont-mark-register-as-const.patch \
+    file://0004-makefile-disable-warnings.patch \
+    file://0005-kallsyms-allow-bigger-ksym_name_len.patch \
 "
 
 S = "${WORKDIR}/linux-${PV}"
