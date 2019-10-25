@@ -1,6 +1,6 @@
 require dinobot-showiframe.inc
 
-COMPATIBLE_MACHINE = "dinobot4kse|ferguson4k"
+COMPATIBLE_MACHINE = "dinobot4kse"
 
 SRCDATE = "20180510"
 

@@ -9,9 +9,9 @@ PR = "${SRCDATE}"
 
 S = "${WORKDIR}"
 
-SRC_URI = "http://source.mynonpublic.com/dinobot/${SOC_FAMILY}-partitions-${SRCDATE}.zip \
-  file://flash-apploader \
-"
+SRC_URI = "http://source.mynonpublic.com/dinobot/${SOC_FAMILY}-partitions-${SRCDATE}.zip;name=newgeneration"
+SRC_URI_dinobot4kse = "http://source.mynonpublic.com/dinobot/${SOC_FAMILY}-partitions-${SRCDATE}.zip;name=${MACHINE}"
+SRC_URI += "file://flash-apploader"
 
 inherit update-rc.d
 
