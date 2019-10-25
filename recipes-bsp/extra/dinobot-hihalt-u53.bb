@@ -5,4 +5,4 @@ SRC_URI[sha256sum] = "6451385ccc23e320b20abd0a1381460bfec9e041ec5f494d503fd1b36b
 
 require dinobot-hihalt.inc
 
-COMPATIBLE_MACHINE = "dinobot4kmini"
+COMPATIBLE_MACHINE = "^(dinobot4kmini)$"

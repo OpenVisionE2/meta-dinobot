@@ -19,4 +19,4 @@ SRC_URI += "file://u53x-platform.zip file://dinobot-sdio-wifi.zip"
 SRC_URI[md5sum] = "713bd8baf854e4e2697e6dae6ef8169b"
 SRC_URI[sha256sum] = "b56a85306a0cfe16744e9955bb24c8b55cd0d331fc018bc4b0d12da3e8a3311d"
 
-COMPATIBLE_MACHINE = "arivatwin"
+COMPATIBLE_MACHINE = "^(arivatwin)$"

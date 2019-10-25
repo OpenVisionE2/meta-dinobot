@@ -5,4 +5,4 @@ SRC_URI[sha256sum] = "cd83268632c09aebb1160d5b1ccf1bf042e19ee01081d8e4ce50437b0f
 
 require dinobot-blindscan.inc
 
-COMPATIBLE_MACHINE = "dinoboth265|axashistwin|protek4kx1"
+COMPATIBLE_MACHINE = "^(dinoboth265|axashistwin|protek4kx1)$"

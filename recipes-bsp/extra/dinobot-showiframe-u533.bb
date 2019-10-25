@@ -1,6 +1,6 @@
 require dinobot-showiframe.inc
 
-COMPATIBLE_MACHINE = "arivatwin"
+COMPATIBLE_MACHINE = "^(arivatwin)$"
 
 SRCDATE = "20190906"
 

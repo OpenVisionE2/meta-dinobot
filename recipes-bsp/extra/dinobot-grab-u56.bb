@@ -1,6 +1,6 @@
 require dinobot-grab.inc
 
-COMPATIBLE_MACHINE = "axashisc4k"
+COMPATIBLE_MACHINE = "^(axashisc4k)$"
 
 SRCDATE = "20190711"
 

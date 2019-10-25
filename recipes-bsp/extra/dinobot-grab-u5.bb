@@ -1,6 +1,6 @@
 require dinobot-grab.inc
 
-COMPATIBLE_MACHINE = "mediabox4k|dinobot4k|anadol4k"
+COMPATIBLE_MACHINE = "^(mediabox4k|dinobot4k|anadol4k)$"
 
 SRCDATE = "20191011"
 

@@ -5,4 +5,4 @@ SRC_URI[sha256sum] = "61fd9ce6ff0e80f8baf963dbcf026d851402443ff94fc6fe395e2e0f7a
 
 require dinobot-hihalt.inc
 
-COMPATIBLE_MACHINE = "anadolprohd5|spycatminiv2|iziboxecohd|jdhdduo"
+COMPATIBLE_MACHINE = "^(anadolprohd5|spycatminiv2|iziboxecohd|jdhdduo)$"
