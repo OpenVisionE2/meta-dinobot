@@ -23,6 +23,6 @@ MTD_ROOTFS = "mmcblk0p13"
 
 SDCARDIMG = "no"
 
-MACHINE_FEATURES += "7segment"
+MACHINE_FEATURES += "7segment hiaccel"
 
 IMAGEDIR = "e2/update"

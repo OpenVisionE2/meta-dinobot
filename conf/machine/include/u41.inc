@@ -22,4 +22,4 @@ MACHINETYPE = "u41"
 
 SDCARDIMG = "no"
 
-MACHINE_FEATURES += "blindscan-dvbs textlcd"
+MACHINE_FEATURES += "blindscan-dvbs textlcd hiaccel"

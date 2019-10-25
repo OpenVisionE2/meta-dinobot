@@ -20,6 +20,6 @@ PREFERRED_RPROVIDER_aio-grab = "dinobot-grab-u5"
 
 MACHINETYPE = "u5"
 
-MACHINE_FEATURES += "7segment blindscan-dvbs textlcd"
+MACHINE_FEATURES += "7segment blindscan-dvbs textlcd hiaccel"
 
 IMAGEDIR = "dinobot/u5"

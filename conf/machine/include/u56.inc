@@ -25,6 +25,6 @@ MTD_ROOTFS = "mmcblk0p10"
 
 SDCARDIMG = "no"
 
-MACHINE_FEATURES += "RCA blindscan-dvbs 7segment textlcd"
+MACHINE_FEATURES += "RCA blindscan-dvbs 7segment textlcd hiaccel"
 
 IMAGEDIR = "axas/axasc4k"

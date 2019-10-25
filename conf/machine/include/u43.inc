@@ -23,5 +23,5 @@ MTD_ROOTFS = "mtd11"
 
 SDCARD = "no"
 
-MACHINE_FEATURES += "RCA dvb-c textlcd"
+MACHINE_FEATURES += "RCA dvb-c textlcd hiaccel"
 

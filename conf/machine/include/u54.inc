@@ -25,6 +25,6 @@ MTD_ROOTFS = "mmcblk0p13"
 
 SDCARDIMG = "no"
 
-MACHINE_FEATURES += "7segment RCA blindscan-dvbs textlcd"
+MACHINE_FEATURES += "7segment RCA blindscan-dvbs textlcd hiaccel"
 
 IMAGEDIR = "dinobot/u54"

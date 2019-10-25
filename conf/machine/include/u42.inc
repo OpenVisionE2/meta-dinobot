@@ -25,5 +25,5 @@ MTD_ROOTFS = "mtd11"
 
 SDCARD = "no"
 
-MACHINE_FEATURES += "RCA blindscan-dvbs"
+MACHINE_FEATURES += "RCA blindscan-dvbs hiaccel"
 
