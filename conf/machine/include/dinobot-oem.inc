@@ -20,7 +20,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     rt8822bu \
     rt8188fu \
     firmware-rt8188fu \
-    ${@bb.utils.contains('MACHINE_FEATURES', 'emmc', 'resizerootfs' , '', d)} \
+    ${@bb.utils.contains('MACHINE_FEATURES', 'emmc', 'dinobot-resizerootfs' , '', d)} \
     dinobot-partitions-${SOC_FAMILY} \
 "
 
