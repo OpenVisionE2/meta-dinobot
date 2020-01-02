@@ -2,7 +2,7 @@ require dinobot-showiframe.inc
 
 COMPATIBLE_MACHINE = "^(dinobot4kpro)$"
 
-SRCDATE = "20191211"
+SRCDATE = "20191230"
 
-SRC_URI[md5sum] = "41fc238ffd796b6aa6b8ca3ef0b73ec2"
-SRC_URI[sha256sum] = "6c8f25527e6047f0f88ccec7eea0ca3c4dd6b88b0cefea8acbf00f9e71ac4935"
+SRC_URI[md5sum] = "e873384e78bcb7e765a28d44350f8b19"
+SRC_URI[sha256sum] = "23ba9d651cecd504ace18e67104109577c4327b98ac581f2c63bcbedc58aee13"
