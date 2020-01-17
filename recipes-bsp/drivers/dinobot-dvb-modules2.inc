@@ -45,4 +45,3 @@ do_install() {
     install -m 0755 ${WORKDIR}/loadmodules.sh ${D}${sysconfdir}/init.d/loadmodules
 }
 
-INSANE_SKIP_${PN} += "already-stripped ldflags"

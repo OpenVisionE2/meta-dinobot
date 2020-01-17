@@ -33,4 +33,3 @@ do_install() {
 
 FILES_${PN} = "${datadir} ${sysconfdir}"
 
-INSANE_SKIP_${PN} += "already-stripped"

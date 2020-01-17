@@ -54,4 +54,3 @@ do_install() {
 	install -m 0755 ${S}/zload-dinobot ${D}${sysconfdir}/init.d
 }
 
-INSANE_SKIP_${PN} += "already-stripped ldflags"
