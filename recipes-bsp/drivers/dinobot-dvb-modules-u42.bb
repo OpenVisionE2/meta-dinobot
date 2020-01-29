@@ -6,4 +6,4 @@ require dinobot-dvb-modules2.inc
 SRC_URI[md5sum] = "20d9b2bd27211f8cdbb71e80c3e69e6a"
 SRC_URI[sha256sum] = "24f0422ee46c14ab5e31e6ff10a82415c4784f6629930af36705971212b9d3f3"
 
-COMPATIBLE_MACHINE = "^(anadolprohd5|spycatminiv2|iziboxecohd|jdhdduo)$"
+COMPATIBLE_MACHINE = "^(anadolprohd5|iziboxecohd|jdhdduo)$"
