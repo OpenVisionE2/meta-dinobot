@@ -25,3 +25,4 @@ SDCARD = "no"
 
 MACHINE_FEATURES += "RCA dvb-c 7segment hiaccel"
 
+IMAGEDIR = "dinobot/u43"

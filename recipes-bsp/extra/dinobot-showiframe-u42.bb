@@ -1,6 +1,6 @@
 require dinobot-showiframe.inc
 
-COMPATIBLE_MACHINE = "^(anadolprohd5|iziboxecohd|jdhdduo)$"
+COMPATIBLE_MACHINE = "^(anadolprohd5)$"
 
 SRCDATE = "20200106"
 
