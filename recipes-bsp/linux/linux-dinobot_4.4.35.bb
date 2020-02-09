@@ -30,6 +30,7 @@ RPROVIDES_${KERNEL_PACKAGE_NAME}-image = "${KERNEL_PACKAGE_NAME}-image-${KERNEL_
 
 SRC_URI = "http://source.mynonpublic.com/dinobot/dinobot-linux-${PV}-${SRCDATE}.tar.gz;name=newgeneration \
     file://defconfig \
+    file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc9.patch \
     file://410dts.patch \
     file://0001-mmc-switch-1.8V.patch \
     file://wifi-linux_4.4.183.patch \
@@ -41,6 +42,7 @@ SRC_URI = "http://source.mynonpublic.com/dinobot/dinobot-linux-${PV}-${SRCDATE}.
 
 SRC_URI_dinobot4kse = "http://source.mynonpublic.com/dinobot/dinobot-linux-${PV}-${SRCDATE}.tar.gz;name=${MACHINE} \
     file://defconfig \
+file://${OPENVISION_BASE}/meta-openvision/recipes-linux/kernel-patches/kernel-add-support-for-gcc9.patch \
     file://sdio-platform.patch \
     file://accelmem.patch \
     file://cma.patch \
