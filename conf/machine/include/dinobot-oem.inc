@@ -33,7 +33,6 @@ PREFERRED_VERSION_ffmpeg = "3.4.2"
 
 MACHINE_EXTRA_RRECOMMENDS += "\
     gstreamer1.0-plugin-dvbmediasink \
-    gstreamer1.0-libav \
     "
 
 DVBPROVIDER = "kernel"
