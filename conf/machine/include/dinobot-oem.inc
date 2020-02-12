@@ -24,7 +24,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     dinobot-partitions-${SOC_FAMILY} \
 "
 
-MACHINE_FEATURES += "videoenhancement switchoff hdmicec blindscan-tbs alsa multitranscoding"
+MACHINE_FEATURES += "videoenhancement switchoff hdmicec blindscan-tbs alsa multitranscoding hisil"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-dinobot"
 PREFERRED_VERSION_linux-dinobot = "4.4.35"
