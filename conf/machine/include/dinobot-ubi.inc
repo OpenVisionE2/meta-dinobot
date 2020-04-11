@@ -17,7 +17,6 @@ IMAGE_CMD_ubi_append = " \
     zip -r ../${IMAGE_NAME}_usb.zip *; \
     rm -f ${DEPLOY_DIR_IMAGE}/*.ubi; \
     rm -f ${DEPLOY_DIR_IMAGE}/*.ubifs; \
-    rm -f ${DEPLOY_DIR_IMAGE}/*.manifest; \
     cd ..; \
     rm -Rf ${DEPLOY_DIR_IMAGE}/${MACHINE}; \
     "
