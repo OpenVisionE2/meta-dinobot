@@ -21,7 +21,7 @@ PREFERRED_RPROVIDER_aio-grab = "dinobot-grab-u42"
 MACHINETYPE = "u42"
 
 MTD_KERNEL = "mtd8"
-MTD_ROOTFS = "mtd11"
+MTD_ROOTFS = "mtd9"
 
 SDCARD = "no"
 
