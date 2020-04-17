@@ -1,4 +1,4 @@
-SUMMARY = "showiframe for dinobot Model ${MACHINE}"
+SUMMARY = "showiframe for ${MACHINE}"
 SECTION = "base"
 PRIORITY = "optional"
 LICENSE = "CLOSED"

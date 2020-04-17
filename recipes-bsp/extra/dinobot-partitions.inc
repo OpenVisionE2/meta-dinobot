@@ -1,4 +1,4 @@
-SUMMARY = "Dinobot partitions files"
+SUMMARY = "${MACHINE} partitions files"
 SECTION = "base"
 PRIORITY = "required"
 LICENSE = "CLOSED"
