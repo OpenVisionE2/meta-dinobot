@@ -23,7 +23,7 @@ IMAGE_CMD_dinobotemmc_append = "\
     echo ${IMAGE_NAME} > ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}/imageversion; \
     rm -f ${DEPLOY_DIR_IMAGE}/*.zip; \
     cd ${DEPLOY_DIR_IMAGE}; \
-    zip ${IMAGE_NAME}_mmc.zip ${IMAGEDIR}/*; \
+    zip ${IMAGE_NAME}_usb.zip ${IMAGEDIR}/*; \
     rm -f ${DEPLOY_DIR_IMAGE}/*.ext4; \
     rm -Rf ${IMAGEDIR}; \
     "
