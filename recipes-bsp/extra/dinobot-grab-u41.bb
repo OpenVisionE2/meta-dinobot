@@ -2,7 +2,7 @@ require dinobot-grab.inc
 
 COMPATIBLE_MACHINE = "^(dinoboth265|axashistwin|protek4kx1)$"
 
-SRCDATE = "20191210"
+SRCDATE = "20200514"
 
-SRC_URI[md5sum] = "dc0be434fcdd7b9502f0f682abd4d01a"
-SRC_URI[sha256sum] = "08b68b061090f23c89079c34c2570cc88174f5171daea6556539af92bbeb138d"
+SRC_URI[md5sum] = "561e83af80a37fc16323a2b15e8b9ff4"
+SRC_URI[sha256sum] = "8c70d109e24a7615bf12c77e6e95a3464b7f675acd2158fcddc7343c84e61724"
