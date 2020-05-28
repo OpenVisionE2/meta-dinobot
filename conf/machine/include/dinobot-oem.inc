@@ -29,7 +29,6 @@ MACHINE_FEATURES += "videoenhancement switchoff hdmicec blindscan-tbs alsa multi
 PREFERRED_PROVIDER_virtual/kernel = "linux-dinobot"
 PREFERRED_VERSION_linux-dinobot = "4.4.35"
 PREFERRED_VERSION_directfb = "1.7.7"
-PREFERRED_VERSION_ffmpeg = "3.4.2"
 
 MACHINE_EXTRA_RRECOMMENDS += "\
     gstreamer1.0-plugin-dvbmediasink \
