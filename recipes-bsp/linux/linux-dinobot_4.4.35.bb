@@ -10,7 +10,7 @@ KERNEL_RELEASE = "4.4.35"
 SRCDATE = "20180828"
 SRCDATE_dinobot4kse = "20180502"
 
-inherit kernel machine_kernel_pr
+inherit kernel machine_kernel_pr samba_change_dialect
 
 SRC_URI[newgeneration.md5sum] = "f0dd43d5adc013d0dd89061e3249855a"
 SRC_URI[newgeneration.sha256sum] = "32a8caabfba94d81b649de8dd62cc5b02e1d750cad8d2676e98e242a944273a3"
