@@ -3,10 +3,13 @@ MACHINE_FEATURES_BACKFILL_CONSIDERED += "rtc"
 
 BOX_BRAND = "dinobot"
 
-KERNEL_MODULE_AUTOLOAD += "xhci-plat-hcd"
-KERNEL_MODULE_AUTOLOAD += "ehci-platform"
-KERNEL_MODULE_AUTOLOAD += "ohci-platform"
-KERNEL_MODULE_AUTOLOAD += "cfg80211"
+KERNEL_MODULE_AUTOLOAD += "\
+	xhci-plat-hcd \
+	ehci-platform \
+	ohci-platform \
+	cfg80211 \
+	xfs \
+	"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     kernel-module-xhci-plat-hcd \
@@ -36,8 +39,6 @@ MACHINE_EXTRA_RRECOMMENDS += "\
 
 DVBPROVIDER = "kernel"
 DVBSKYPROVIDER = "kernel"
-
-KERNEL_MODULE_AUTOLOAD += "xfs"
 
 require conf/machine/include/soc-family.inc
 
