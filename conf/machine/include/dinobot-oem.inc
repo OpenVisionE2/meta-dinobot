@@ -15,10 +15,10 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
     dinobot-pvr \
     dinobot-lib-helper \
     dinobot-libs-${MACHINETYPE} \
-    rtl8192eu \
+    kernel-module-extrawlan-rtl8192eu \
     firmware-rtl8192eu \
-    rt8822bu \
-    rt8188fu \
+    kernel-module-extrawlan-rt8822bu \
+    kernel-module-extrawlan-rt8188fu \
     firmware-rt8188fu \
     ${@bb.utils.contains('MACHINE_FEATURES', 'emmc', 'dinobot-resizerootfs' , '', d)} \
     dinobot-partitions-${SOC_FAMILY} \
