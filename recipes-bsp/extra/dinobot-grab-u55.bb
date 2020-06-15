@@ -2,7 +2,7 @@ require dinobot-grab.inc
 
 COMPATIBLE_MACHINE = "^(dinobotu55|iziboxx3)$"
 
-SRCDATE = "20200103"
+SRCDATE = "20200529"
 
-SRC_URI[md5sum] = "dc52dd5cee6553f9d605989e3e679dbe"
-SRC_URI[sha256sum] = "f761f1df6d84440d8716c6c80369fea512b8e3fa8d2aecb610205114483175c9"
+SRC_URI[md5sum] = "9ce64324f751c0e63e547c4510065d38"
+SRC_URI[sha256sum] = "87927b5703cd8174f436532bb969999340a3efedcddb9adbedc864ddef1b68a5"
