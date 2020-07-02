@@ -2,7 +2,7 @@ SUMMARY = "Hardware drivers for ${MACHINE}"
 SECTION = "base"
 PRIORITY = "required"
 LICENSE = "CLOSED"
-require conf/license/license-close.in
+require conf/license/license-close.inc
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
@@ -56,4 +56,3 @@ do_install() {
 	echo "echo 200000 > /sys/devices/system/cpu/cpufreq/interactive/timer_rate" >> ${S}/zload-dinobot
 	install -m 0755 ${S}/zload-dinobot ${D}${sysconfdir}/init.d
 }
-
