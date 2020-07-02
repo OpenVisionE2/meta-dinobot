@@ -1,4 +1,3 @@
-KV = "4.4.35"
 SRCDATE = "20191212"
 
 do_install_append() {

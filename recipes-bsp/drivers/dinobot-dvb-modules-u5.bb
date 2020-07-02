@@ -1,9 +1,8 @@
-KV = "4.4.35"
-SRCDATE = "20200610"
+SRCDATE = "20200624"
 
 require dinobot-dvb-modules2.inc
 
-SRC_URI[md5sum] = "220ee58ab039919073efc8b7b8750970"
-SRC_URI[sha256sum] = "2545a0ba3b03022a7088bf52d4eae09e7523f4bbbbbe1b96e4175e9cfc5273e5"
+SRC_URI[md5sum] = "331775b89eba54fb65b6c2f9dd6ec5a3"
+SRC_URI[sha256sum] = "2d5095fe6ae2d4ce588c47430c00a92f17c9be06d8031673b3167f0661739357"
 
 COMPATIBLE_MACHINE = "^(dinobot4k|anadol4k)$"

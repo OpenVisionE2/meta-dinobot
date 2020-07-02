@@ -2,8 +2,11 @@ SUMMARY = "Hardware drivers for ${MACHINE}"
 SECTION = "base"
 PRIORITY = "required"
 LICENSE = "CLOSED"
-require conf/license/license-close.inc
+require conf/license/license-close.in
+
 PACKAGE_ARCH = "${MACHINE_ARCH}"
+
+KV = "4.4.35"
 
 PV = "${KV}+${SRCDATE}"
 
