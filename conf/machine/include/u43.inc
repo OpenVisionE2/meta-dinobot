@@ -23,6 +23,6 @@ MTD_ROOTFS = "mtd11"
 
 SDCARD = "no"
 
-MACHINE_FEATURES += "RCA dvb-c 7segment hiaccel"
+MACHINE_FEATURES += "dvb-c 7segment hiaccel"
 
 IMAGEDIR = "dinobot/u43"

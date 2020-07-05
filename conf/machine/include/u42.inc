@@ -25,6 +25,6 @@ MTD_ROOTFS = "mtd9"
 
 SDCARD = "no"
 
-MACHINE_FEATURES += "RCA blindscan-dvbs hiaccel"
+MACHINE_FEATURES += "blindscan-dvbs hiaccel"
 
 IMAGEDIR = "dinobot/u42"
