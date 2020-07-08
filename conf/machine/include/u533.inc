@@ -8,10 +8,10 @@ require conf/machine/include/dinobot-emmc.inc
 PREFERRED_PROVIDER_virtual/blindscan-dvbs = "dinobot-blindscan-u533"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
-    dinobot-dvb-modules-u533 \
-    dinobot-libs-u533 \
-    dinobot-hihalt-u533 \
-"
+	dinobot-dvb-modules-u533 \
+	dinobot-libs-u533 \
+	dinobot-hihalt-u533 \
+	"
 
 PREFERRED_RPROVIDER_showiframe = "dinobot-showiframe-u533"
 PREFERRED_RPROVIDER_aio-grab = "dinobot-grab-u533"

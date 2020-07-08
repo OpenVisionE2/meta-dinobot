@@ -8,10 +8,11 @@ require conf/machine/include/dinobot-cortexa9.inc
 require conf/machine/include/dinobot-ubi.inc
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
-    dinobot-dvb-modules-u43 \
-    dinobot-libs-u43 \
-    dinobot-hihalt-u43 \
-"
+	dinobot-dvb-modules-u43 \
+	dinobot-libs-u43 \
+	dinobot-hihalt-u43 \
+	dinobot-cpu-scaling \
+	"
 
 PREFERRED_RPROVIDER_showiframe = "dinobot-showiframe-u43"
 PREFERRED_RPROVIDER_aio-grab = "dinobot-grab-u43"

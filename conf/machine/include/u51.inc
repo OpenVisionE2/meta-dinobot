@@ -10,10 +10,10 @@ require conf/machine/include/dinobot-emmc.inc
 PREFERRED_PROVIDER_virtual/blindscan-dvbs = "dinobot-blindscan-u51"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
-    dinobot-dvb-modules-u51 \
-    dinobot-libs-u51 \
-    dinobot-hihalt-u51 \
-"
+	dinobot-dvb-modules-u51 \
+	dinobot-libs-u51 \
+	dinobot-hihalt-u51 \
+	"
 
 PREFERRED_RPROVIDER_showiframe = "dinobot-showiframe-u51"
 PREFERRED_RPROVIDER_aio-grab = "dinobot-grab-u51"

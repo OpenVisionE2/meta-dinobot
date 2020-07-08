@@ -11,12 +11,12 @@ require conf/machine/include/dinobot-cortexa15.inc
 require conf/machine/include/dinobot-emmc.inc
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
-    kernel-module-brcmutil \
-    kernel-module-brcmfmac \
-    dinobot-dvb-modules-u5pvr \
-    dinobot-libs-u5pvr \
-    dinobot-hihalt-u5pvr \
-"
+	kernel-module-brcmutil \
+	kernel-module-brcmfmac \
+	dinobot-dvb-modules-u5pvr \
+	dinobot-libs-u5pvr \
+	dinobot-hihalt-u5pvr \
+	"
 
 PREFERRED_RPROVIDER_showiframe = "dinobot-showiframe-u5pvr"
 PREFERRED_RPROVIDER_aio-grab = "dinobot-grab-u5pvr"
