@@ -5,7 +5,7 @@ LICENSE = "CLOSED"
 require conf/license/license-close.inc
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-PR = "${SRCDATE}"
+PV = "${SRCDATE}"
 
 S = "${WORKDIR}"
 
