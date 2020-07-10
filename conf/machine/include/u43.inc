@@ -20,10 +20,8 @@ PREFERRED_RPROVIDER_aio-grab = "dinobot-grab-u43"
 MACHINETYPE = "u43"
 
 MTD_KERNEL = "mtd8"
-MTD_ROOTFS = "mtd11"
+MTD_ROOTFS = "mtd9"
 
 SDCARD = "no"
 
 MACHINE_FEATURES += "dvb-c 7segment hiaccel"
-
-IMAGEDIR = "dinobot/u43"
