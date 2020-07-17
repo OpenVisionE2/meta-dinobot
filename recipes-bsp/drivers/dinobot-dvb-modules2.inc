@@ -31,6 +31,7 @@ FILES_${PN} += "${sysconfdir}/modules-load.d"
 
 do_compile() {
 }
+
 do_populate_sysroot() {
 }
 
@@ -47,4 +48,3 @@ do_install() {
     install -d ${D}${sysconfdir}/init.d/
     install -m 0755 ${WORKDIR}/loadmodules.sh ${D}${sysconfdir}/init.d/loadmodules
 }
-

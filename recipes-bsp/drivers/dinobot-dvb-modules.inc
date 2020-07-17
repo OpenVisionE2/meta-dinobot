@@ -22,7 +22,7 @@ inherit update-rc.d
 INHIBIT_PACKAGE_STRIP = "1"
 
 FILES_${PN} += "${sysconfdir}/modules-load.d/_${MACHINE}.conf"
-FILES_${PN} += "/lib/modules/${KV}/extra"
+FILES_${PN} += "${base_libdir}/modules/${KV}/extra"
 FILES_${PN} += "${bindir}/komession"
 FILES_${PN} += "${sysconfdir}/init.d"
 
@@ -36,13 +36,13 @@ do_package_qa() {
 }
 
 do_install() {
-	install -d ${D}/lib/modules/${KV}/extra
+	install -d ${D}${base_libdir}/modules/${KV}/extra
 	install -d ${D}${bindir}
-	install -m 0644 ${S}/dvbmodule ${D}/lib/modules/${KV}/extra
+	install -m 0644 ${S}/dvbmodule ${D}${base_libdir}/modules/${KV}/extra
 	install -m 0755 ${S}/komession ${D}${bindir}
 	install -d ${D}/${sysconfdir}/modules-load.d
 	for i in ${KOFILES}; do
-		install -m 0644 ${S}/$i.ko ${D}/lib/modules/${KV}/extra
+		install -m 0644 ${S}/$i.ko ${D}${base_libdir}/modules/${KV}/extra
 		echo $i >> ${D}/${sysconfdir}/modules-load.d/_${MACHINE}.conf
 	done
 	install -d ${D}${sysconfdir}/init.d/
