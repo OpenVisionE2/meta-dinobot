@@ -26,3 +26,5 @@ SDCARDIMG = "no"
 MACHINE_FEATURES += "7segment hiaccel"
 
 IMAGEDIR = "e2/update"
+
+STB_PLATFORM = "u533"

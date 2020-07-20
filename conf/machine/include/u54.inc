@@ -28,3 +28,5 @@ SDCARDIMG = "no"
 MACHINE_FEATURES += "7segment blindscan-dvbs textlcd hiaccel RCA"
 
 IMAGEDIR = "dinobot/u54"
+
+STB_PLATFORM = "u54"

@@ -26,3 +26,5 @@ MTD_ROOTFS = "mtd11"
 SDCARDIMG = "no"
 
 MACHINE_FEATURES += "7segment blindscan-dvbs textlcd hiaccel RCA"
+
+STB_PLATFORM = "u55"

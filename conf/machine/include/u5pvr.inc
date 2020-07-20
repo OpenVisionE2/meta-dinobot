@@ -31,3 +31,5 @@ SDCARDIMG = "no"
 MACHINE_FEATURES += "7segment dvb-c textlcd RCA"
 
 IMAGEDIR = "dinobot/u5pvr"
+
+STB_PLATFORM = "u5pvr"

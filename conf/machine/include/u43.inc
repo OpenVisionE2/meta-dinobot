@@ -25,3 +25,5 @@ MTD_ROOTFS = "mtd9"
 SDCARD = "no"
 
 MACHINE_FEATURES += "dvb-c 7segment hiaccel RCA"
+
+STB_PLATFORM = "u43"

@@ -29,3 +29,5 @@ SDCARD = "no"
 MACHINE_FEATURES += "blindscan-dvbs hiaccel RCA"
 
 IMAGEDIR = "dinobot/u42"
+
+STB_PLATFORM = "u42"

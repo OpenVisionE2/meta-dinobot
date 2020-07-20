@@ -24,3 +24,5 @@ MTD_KERNEL = "mmcblk0p9"
 MTD_ROOTFS = "mmcblk0p10"
 
 MACHINE_FEATURES += "7segment blindscan-dvbs textlcd hiaccel RCA"
+
+STB_PLATFORM = "u51"
