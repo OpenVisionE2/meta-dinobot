@@ -24,4 +24,4 @@ MTD_ROOTFS = "mtd9"
 
 SDCARD = "no"
 
-MACHINE_FEATURES += "dvb-c 7segment hiaccel"
+MACHINE_FEATURES += "dvb-c 7segment hiaccel RCA"

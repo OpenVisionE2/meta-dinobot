@@ -28,6 +28,6 @@ MTD_ROOTFS = "mmcblk0p13"
 
 SDCARDIMG = "no"
 
-MACHINE_FEATURES += "7segment dvb-c textlcd"
+MACHINE_FEATURES += "7segment dvb-c textlcd RCA"
 
 IMAGEDIR = "dinobot/u5pvr"

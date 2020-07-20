@@ -27,7 +27,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	dinobot-partitions-${SOC_FAMILY} \
 	"
 
-MACHINE_FEATURES += "videoenhancement switchoff hdmicec blindscan-tbs alsa multitranscoding hisil"
+MACHINE_FEATURES += "videoenhancement switchoff hdmicec blindscan-tbs alsa multitranscoding hisil HDMI"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-dinobot"
 PREFERRED_VERSION_linux-dinobot = "4.4.35"
@@ -44,6 +44,6 @@ require conf/machine/include/soc-family.inc
 
 DVBMEDIASINK_CONFIG = "--with-h265 --with-vb8 --with-vb9 --with-spark --with-wma --with-wmv --with-pcm --with-dts --with-eac3"
 
-PREFERRED_PROVIDER_virtual/enigma2-mediaservice ?= "enigma2-plugin-systemplugins-servicehisilicon"
+PREFERRED_PROVIDER_virtual/enigma2-mediaservice = "enigma2-plugin-systemplugins-servicehisilicon"
 
 DEPENDS_append_pn-enigma2 = " dinobot-libs-${MACHINETYPE} "

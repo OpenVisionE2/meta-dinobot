@@ -25,4 +25,4 @@ MTD_ROOTFS = "mtd11"
 
 SDCARDIMG = "no"
 
-MACHINE_FEATURES += "7segment blindscan-dvbs textlcd hiaccel"
+MACHINE_FEATURES += "7segment blindscan-dvbs textlcd hiaccel RCA"
