@@ -1,6 +1,8 @@
 EXTRA_OECONF_append_pn-enigma2 = "--with-lcddev=/dev/null --with-alphablendingacceleration=always"
 
 SOC_FAMILY = "hisi3716mv410"
+HICHIPSET = "3716mv410"
+CHIPSET = "Hi3716Mv410"
 
 KERNEL_MODULE_AUTOLOAD += "8192eu"
 

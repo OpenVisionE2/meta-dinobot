@@ -1,6 +1,8 @@
 EXTRA_OECONF_append_pn-enigma2 = "--with-lcddev=/dev/null --with-alphablendingacceleration=always"
 
 SOC_FAMILY = "hisi3798mv200"
+HICHIPSET = "3798mv200"
+CHIPSET = "Hi3798Mv200"
 
 KERNEL_MODULE_AUTOLOAD += "rt8188fu"
 
