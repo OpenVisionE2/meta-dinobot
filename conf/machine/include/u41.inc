@@ -23,6 +23,6 @@ MACHINETYPE = "u41"
 
 SDCARDIMG = "no"
 
-MACHINE_FEATURES += "blindscan-dvbs textlcd hiaccel RCA"
+MACHINE_FEATURES += "blindscan-dvbs textlcd hiaccel RCA vfdsymbol"
 
 STB_PLATFORM = "u41"
