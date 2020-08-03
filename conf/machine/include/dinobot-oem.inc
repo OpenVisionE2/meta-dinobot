@@ -8,7 +8,6 @@ KERNEL_MODULE_AUTOLOAD += "\
 	ehci-platform \
 	ohci-platform \
 	cfg80211 \
-	xfs \
 	"
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
