@@ -32,3 +32,5 @@ MACHINE_FEATURES += "blindscan-dvbs 7segment textlcd hiaccel RCA"
 IMAGEDIR = "axas/axasc4k"
 
 STB_PLATFORM = "u56"
+
+EXTRA_ALSA = "mv200"

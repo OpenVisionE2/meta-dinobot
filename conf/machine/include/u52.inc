@@ -30,3 +30,5 @@ SDCARDIMG = "no"
 MACHINE_FEATURES += "7segment dvb-c blindscan-dvbs textlcd hiaccel RCA"
 
 STB_PLATFORM = "u52"
+
+EXTRA_ALSA = "mv200"

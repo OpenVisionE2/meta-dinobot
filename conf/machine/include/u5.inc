@@ -27,3 +27,5 @@ MACHINE_FEATURES += "7segment blindscan-dvbs textlcd hiaccel RCA"
 IMAGEDIR = "dinobot/u5"
 
 STB_PLATFORM = "u5"
+
+EXTRA_ALSA = "mv200"

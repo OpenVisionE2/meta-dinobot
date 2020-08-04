@@ -28,3 +28,5 @@ MTD_ROOTFS = "mmcblk0p10"
 MACHINE_FEATURES += "7segment blindscan-dvbs textlcd hiaccel RCA"
 
 STB_PLATFORM = "u51"
+
+EXTRA_ALSA = "mv200"
