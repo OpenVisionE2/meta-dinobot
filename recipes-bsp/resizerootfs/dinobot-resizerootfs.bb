@@ -3,7 +3,6 @@ require conf/license/license-gplv2.inc
 
 RDEPENDS_${PN} = "e2fsprogs-resize2fs"
 
-PV = "1.0"
 
 SRC_URI = "file://resizerootfs"
 

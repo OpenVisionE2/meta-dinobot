@@ -1,6 +1,8 @@
 # We know about rtc
 MACHINE_FEATURES_BACKFILL_CONSIDERED += "rtc"
 
+KERNELVERSION = "4.4.35"
+
 BOX_BRAND = "dinobot"
 
 KERNEL_MODULE_AUTOLOAD += "\
@@ -29,7 +31,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 MACHINE_FEATURES += "videoenhancement switchoff hdmicec blindscan-tbs alsa multitranscoding hisil HDMI"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-dinobot"
-PREFERRED_VERSION_linux-dinobot = "4.4.35"
+PREFERRED_VERSION_linux-dinobot = "${KERNELVERSION}"
 PREFERRED_VERSION_directfb = "1.7.7"
 
 MACHINE_EXTRA_RRECOMMENDS += "\
