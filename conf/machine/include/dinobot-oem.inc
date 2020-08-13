@@ -50,3 +50,5 @@ PREFERRED_PROVIDER_virtual/enigma2-mediaservice = "enigma2-plugin-systemplugins-
 DEPENDS_append_pn-enigma2 = " dinobot-libs-${MACHINETYPE} "
 
 BLINDSCAN_BINARY = "dinobot-blindscan"
+
+RCNAME ?= "dinobot"

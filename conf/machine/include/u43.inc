@@ -29,3 +29,5 @@ SDCARD = "no"
 MACHINE_FEATURES += "dvb-c 7segment hiaccel RCA"
 
 STB_PLATFORM = "u43"
+
+RCNAME = "turing"
