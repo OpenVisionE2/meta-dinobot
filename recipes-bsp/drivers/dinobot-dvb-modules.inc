@@ -39,10 +39,10 @@ do_install() {
 	install -d ${D}${bindir}
 	install -m 0644 ${S}/dvbmodule ${D}${base_libdir}/modules/${KV}/extra
 	install -m 0755 ${S}/komession ${D}${bindir}
-	install -d ${D}/${sysconfdir}/modules-load.d
+	install -d ${D}${sysconfdir}/modules-load.d
 	for i in ${KOFILES}; do
 		install -m 0644 ${S}/$i.ko ${D}${base_libdir}/modules/${KV}/extra
-		echo $i >> ${D}/${sysconfdir}/modules-load.d/_${MACHINE}.conf
+		echo $i >> ${D}${sysconfdir}/modules-load.d/_${MACHINE}.conf
 	done
 	install -d ${D}${sysconfdir}/init.d/
 	echo "#!/bin/sh" > ${S}/zload-dinobot

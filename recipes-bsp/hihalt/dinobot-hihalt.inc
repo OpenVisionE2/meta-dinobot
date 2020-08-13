@@ -19,9 +19,9 @@ S = "${WORKDIR}"
 
 do_install() {
     install -d ${D}${bindir}
-    install -m 0755 ${S}/hihalt ${D}/${bindir}
-    install -m 0755 ${S}/hipmoc ${D}/${bindir}
-    install -m 0755 ${S}/timerTask.py ${D}/${bindir}
+    install -m 0755 ${S}/hihalt ${D}${bindir}
+    install -m 0755 ${S}/hipmoc ${D}${bindir}
+    install -m 0755 ${S}/timerTask.py ${D}${bindir}
     install -d ${D}${sysconfdir}/init.d
     install -m 0755 ${S}/suspend.sh ${D}${sysconfdir}/init.d/suspend
 }

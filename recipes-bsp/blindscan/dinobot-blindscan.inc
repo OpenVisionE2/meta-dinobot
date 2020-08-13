@@ -10,19 +10,19 @@ RPROVIDES_${PN} += "virtual/blindscan-dvbs"
 
 PV = "${SRCDATE}"
 
-SRC_URI  = "http://source.mynonpublic.com/dinobot/dinobot-blindscan-${SRCDATE}-${MACHINETYPE}.tar.gz"
+SRC_URI  = "http://source.mynonpublic.com/dinobot/${BLINDSCAN_BINARY}-${SRCDATE}-${MACHINETYPE}.tar.gz"
 
 S = "${WORKDIR}"
 
 do_install() {
     install -d ${D}${bindir}
-    install -m 0755 ${S}/dinobot-blindscan ${D}/${bindir}
+    install -m 0755 ${S}/${BLINDSCAN_BINARY} ${D}${bindir}
 }
 
 do_package_qa() {
 }
 
-FILES_${PN}  = "${bindir}/dinobot-blindscan"
+FILES_${PN}  = "${bindir}"
 
 do_prepare_recipe_sysroot[noexec] = "1"
 INHIBIT_PACKAGE_STRIP = "1"
