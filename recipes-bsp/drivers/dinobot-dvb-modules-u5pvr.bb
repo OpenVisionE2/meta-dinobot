@@ -3,9 +3,9 @@ SRCDATE = "20180427"
 KOFILES = "kds mali_kbase hi_dbe hi_tuner hi_sci hi_pmoc tntfs"
 
 do_install_append() {
-	install -d ${D}${base_libdir}/firmware/brcm
-	install -m 0644 ${S}/brcmfmac4339-sdio.bin ${D}${base_libdir}/firmware/brcm
-	install -m 0644 ${S}/brcmfmac4339-sdio.txt ${D}${base_libdir}/firmware/brcm
+	install -d ${D}${nonarch_base_libdir}/firmware/brcm
+	install -m 0644 ${S}/brcmfmac4339-sdio.bin ${D}${nonarch_base_libdir}/firmware/brcm
+	install -m 0644 ${S}/brcmfmac4339-sdio.txt ${D}${nonarch_base_libdir}/firmware/brcm
 }
 
 FILES_${PN} += "/lib/firmware/brcm"
