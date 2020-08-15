@@ -16,4 +16,4 @@ do_install () {
     install -m 0755 ${WORKDIR}/resizerootfs ${D}${sysconfdir}/init.d/resizerootfs
 }
 
-COMPATIBLE_MACHINE = "anadol4k|axashis4kcombo|axashis4kcomboplus|dinobot4k|dinobot4kl|dinobot4kmini|dinobot4kplus|dinobot4kse|anadol4kv2|dinobot4kpro|dinobotu55|dinoboth265|axashistwin|axashisc4k|anadolprohd5|dinobotu43|protek4kx1|iziboxecohd|jdhdduo|turing|arivacombo|arivatwin"
+COMPATIBLE_MACHINE = "^(anadol4k|axashis4kcombo|axashis4kcomboplus|dinobot4k|dinobot4kl|dinobot4kmini|dinobot4kplus|dinobot4kse|anadol4kv2|dinobot4kpro|dinobotu55|dinoboth265|axashistwin|axashisc4k|anadolprohd5|dinobotu43|protek4kx1|iziboxecohd|jdhdduo|turing|arivacombo|arivatwin|vipers|viper4kv20)$"
