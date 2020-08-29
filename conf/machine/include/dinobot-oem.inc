@@ -26,6 +26,7 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	firmware-rt8188fu \
 	${@bb.utils.contains('MACHINE_FEATURES', 'emmc', 'dinobot-resizerootfs' , '', d)} \
 	dinobot-partitions-${SOC_FAMILY} \
+	gstreamer1.0-plugin-dvbmediasink \
 	"
 
 MACHINE_FEATURES += "videoenhancement switchoff hdmicec blindscan-tbs alsa multitranscoding hisil HDMI"
@@ -33,10 +34,6 @@ MACHINE_FEATURES += "videoenhancement switchoff hdmicec blindscan-tbs alsa multi
 PREFERRED_PROVIDER_virtual/kernel = "linux-dinobot"
 PREFERRED_VERSION_linux-dinobot = "${KERNELVERSION}"
 PREFERRED_VERSION_directfb = "1.7.7"
-
-MACHINE_EXTRA_RRECOMMENDS += "\
-	gstreamer1.0-plugin-dvbmediasink \
-	"
 
 DVBPROVIDER = "kernel"
 DVBSKYPROVIDER = "kernel"
