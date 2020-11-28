@@ -9,17 +9,9 @@ KERNEL_MODULE_AUTOLOAD += "8192eu"
 require conf/machine/include/dinobot-cortexa9.inc
 require conf/machine/include/dinobot-ubi.inc
 
-PREFERRED_PROVIDER_virtual/blindscan-dvbs = "dinobot-blindscan-u41"
-
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
-	dinobot-dvb-modules-u41 \
-	dinobot-libs-u41 \
-	dinobot-hihalt-u41 \
 	dinobot-cpu-scaling \
 	"
-
-PREFERRED_RPROVIDER_showiframe = "dinobot-showiframe-u41"
-PREFERRED_RPROVIDER_aio-grab = "dinobot-grab-u41"
 
 MACHINETYPE = "u41"
 
@@ -27,4 +19,4 @@ SDCARDIMG = "no"
 
 MACHINE_FEATURES += "blindscan-dvbs textlcd hiaccel RCA vfdsymbol"
 
-STB_PLATFORM = "u41"
+STB_PLATFORM = "${MACHINETYPE}"

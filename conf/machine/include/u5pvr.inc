@@ -15,13 +15,7 @@ require conf/machine/include/dinobot-emmc.inc
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	kernel-module-brcmutil \
 	kernel-module-brcmfmac \
-	dinobot-dvb-modules-u5pvr \
-	dinobot-libs-u5pvr \
-	dinobot-hihalt-u5pvr \
 	"
-
-PREFERRED_RPROVIDER_showiframe = "dinobot-showiframe-u5pvr"
-PREFERRED_RPROVIDER_aio-grab = "dinobot-grab-u5pvr"
 
 MACHINETYPE = "u5pvr"
 
@@ -32,6 +26,6 @@ SDCARDIMG = "no"
 
 MACHINE_FEATURES += "7segment dvb-c textlcd RCA"
 
-IMAGEDIR = "dinobot/u5pvr"
+IMAGEDIR = "dinobot/${MACHINETYPE}"
 
-STB_PLATFORM = "u5pvr"
+STB_PLATFORM = "${MACHINETYPE}"

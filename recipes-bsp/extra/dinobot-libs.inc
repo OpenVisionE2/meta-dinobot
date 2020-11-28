@@ -15,6 +15,14 @@ SRC_URI = "http://source.mynonpublic.com/dinobot/${MACHINETYPE}-libs-${SRCDATE}.
 
 S = "${WORKDIR}/hilib"
 
+SOLIBS = ".so"
+FILES_SOLIBSDEV = ""
+
+PRIVATE_LIBS_${PN} = "\
+libpng1.6.26.so \
+libjpeg9b.so \
+"
+
 do_configure() {
 }
 

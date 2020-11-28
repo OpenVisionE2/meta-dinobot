@@ -6,7 +6,6 @@ require conf/license/license-close.inc
 
 PACKAGE_ARCH = "${MACHINE_ARCH}"
 
-
 PV = "${KV}+${SRCDATE}"
 
 SRC_URI = "http://source.mynonpublic.com/dinobot/${MACHINETYPE}-drivers-${KV}-${SRCDATE}.zip"

@@ -27,11 +27,17 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	${@bb.utils.contains('MACHINE_FEATURES', 'emmc', 'dinobot-resizerootfs' , '', d)} \
 	dinobot-partitions-${SOC_FAMILY} \
 	gstreamer1.0-plugin-dvbmediasink \
+	dinobot-dvb-modules-${MACHINETYPE} \
+	dinobot-libs-${MACHINETYPE} \
+	dinobot-hihalt-${MACHINETYPE} \
 	"
 
 MACHINE_FEATURES += "videoenhancement switchoff hdmicec blindscan-tbs alsa multitranscoding hisil HDMI"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-dinobot"
+PREFERRED_PROVIDER_virtual/blindscan-dvbs = "dinobot-blindscan-${MACHINETYPE}"
+PREFERRED_RPROVIDER_showiframe = "dinobot-showiframe-${MACHINETYPE}"
+PREFERRED_RPROVIDER_aio-grab = "dinobot-grab-${MACHINETYPE}"
 PREFERRED_VERSION_linux-dinobot = "${KERNELVERSION}"
 PREFERRED_VERSION_directfb = "1.7.7"
 

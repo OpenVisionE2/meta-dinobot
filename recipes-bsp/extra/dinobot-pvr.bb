@@ -1,6 +1,5 @@
 require conf/license/license-gplv2.inc
 
-
 do_install() {
     install -d ${D}${sysconfdir}/init.d
     install -d ${D}${sysconfdir}/rcS.d
