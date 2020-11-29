@@ -30,6 +30,10 @@ do_populate_sysroot() {
 do_package_qa() {
 }
 
+do_install_prepend() {
+	rm -f ${S}/tntfs.ko
+}
+
 do_install() {
 	install -d ${D}${nonarch_base_libdir}/modules/${KV}/extra
 	install -d ${D}${bindir}
@@ -40,8 +44,6 @@ do_install() {
 		install -m 0644 ${S}/$i.ko ${D}${nonarch_base_libdir}/modules/${KV}/extra
 		echo $i >> ${D}${sysconfdir}/modules-load.d/_${MACHINE}.conf
 	done
-	rm -f ${D}${nonarch_base_libdir}/modules/${KV}/extra/tntfs.ko
-	find ${D}${sysconfdir}/modules-load.d -type f -name "*.conf" | xargs -L1 sed -i '/tntfs/d'
 	install -d ${D}${sysconfdir}/init.d/
 	echo "#!/bin/sh" > ${S}/zload-dinobot
 	echo "komession" >> ${S}/zload-dinobot

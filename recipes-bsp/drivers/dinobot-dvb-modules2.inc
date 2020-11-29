@@ -32,12 +32,15 @@ do_populate_sysroot() {
 do_package_qa() {
 }
 
+do_install_prepend() {
+	rm -f ${S}/tntfs.ko
+	find ${S}/ -type f -name "*load*" | xargs -r -L1 sed -i '/tntfs/d'
+}
+
 do_install() {
 	install -d ${D}${nonarch_base_libdir}/modules/${KV}/extra
 	install -d ${D}${bindir}
 	install -m 0644 ${S}/*.ko ${D}${nonarch_base_libdir}/modules/${KV}/extra
-	rm -f ${D}${nonarch_base_libdir}/modules/${KV}/extra/tntfs.ko
-	find ${D}${nonarch_base_libdir}/modules/${KV}/extra -type f -name "*load*" | xargs -L1 sed -i '/tntfs/d'
 	install -m 0644 ${S}/dvbmodule ${D}${nonarch_base_libdir}/modules/${KV}/extra
 	install -m 0755 ${S}/komession ${D}${bindir}
 	install -m 0755  ${S}/load ${D}${nonarch_base_libdir}/modules/${KV}/extra
