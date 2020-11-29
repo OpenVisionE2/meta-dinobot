@@ -19,10 +19,7 @@ inherit update-rc.d
 
 INHIBIT_PACKAGE_STRIP = "1"
 
-FILES_${PN} += "${sysconfdir}/modules-load.d/_${MACHINE}.conf"
-FILES_${PN} += "${nonarch_base_libdir}/modules/${KV}/extra"
-FILES_${PN} += "${bindir}/komession"
-FILES_${PN} += "${sysconfdir}/init.d"
+FILES_${PN} += "${sysconfdir}/modules-load.d/_${MACHINE}.conf ${nonarch_base_libdir}/modules/${KV}/extra ${bindir}/komession ${sysconfdir}/init.d"
 
 do_compile() {
 }
@@ -43,6 +40,8 @@ do_install() {
 		install -m 0644 ${S}/$i.ko ${D}${nonarch_base_libdir}/modules/${KV}/extra
 		echo $i >> ${D}${sysconfdir}/modules-load.d/_${MACHINE}.conf
 	done
+	rm -f ${D}${nonarch_base_libdir}/modules/${KV}/extra/tntfs.ko
+	find ${D}${sysconfdir}/modules-load.d -type f -name "*.conf" | xargs -L1 sed -i '/tntfs/d'
 	install -d ${D}${sysconfdir}/init.d/
 	echo "#!/bin/sh" > ${S}/zload-dinobot
 	echo "komession" >> ${S}/zload-dinobot

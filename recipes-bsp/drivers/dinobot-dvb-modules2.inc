@@ -9,8 +9,8 @@ PACKAGE_ARCH = "${MACHINE_ARCH}"
 PV = "${KV}+${SRCDATE}"
 
 SRC_URI = "http://source.mynonpublic.com/dinobot/${MACHINETYPE}-drivers-${KV}-${SRCDATE}.tar.gz \
-    file://loadmodules.sh \
-"
+	file://loadmodules.sh \
+	"
 
 S = "${WORKDIR}/hiko"
 
@@ -21,11 +21,7 @@ inherit update-rc.d
 
 INHIBIT_PACKAGE_STRIP = "1"
 
-FILES_${PN} += "${nonarch_base_libdir}/modules/${KV}/extra"
-FILES_${PN} += "${bindir}/komession"
-FILES_${PN} += "${sysconfdir}/init.d"
-FILES_${PN} += "${sysconfdir}/modules-load.d"
-
+FILES_${PN} += "${nonarch_base_libdir}/modules/${KV}/extra ${bindir}/komession ${sysconfdir}/init.d ${sysconfdir}/modules-load.d"
 
 do_compile() {
 }
@@ -37,12 +33,14 @@ do_package_qa() {
 }
 
 do_install() {
-    install -d ${D}${nonarch_base_libdir}/modules/${KV}/extra
-    install -d ${D}${bindir}
-    install -m 0644 ${S}/*.ko ${D}${nonarch_base_libdir}/modules/${KV}/extra
-    install -m 0644 ${S}/dvbmodule ${D}${nonarch_base_libdir}/modules/${KV}/extra
-    install -m 0755 ${S}/komession ${D}${bindir}
-    install -m 0755  ${S}/load ${D}${nonarch_base_libdir}/modules/${KV}/extra
-    install -d ${D}${sysconfdir}/init.d/
-    install -m 0755 ${WORKDIR}/loadmodules.sh ${D}${sysconfdir}/init.d/loadmodules
+	install -d ${D}${nonarch_base_libdir}/modules/${KV}/extra
+	install -d ${D}${bindir}
+	install -m 0644 ${S}/*.ko ${D}${nonarch_base_libdir}/modules/${KV}/extra
+	rm -f ${D}${nonarch_base_libdir}/modules/${KV}/extra/tntfs.ko
+	find ${D}${nonarch_base_libdir}/modules/${KV}/extra -type f -name "*load*" | xargs -L1 sed -i '/tntfs/d'
+	install -m 0644 ${S}/dvbmodule ${D}${nonarch_base_libdir}/modules/${KV}/extra
+	install -m 0755 ${S}/komession ${D}${bindir}
+	install -m 0755  ${S}/load ${D}${nonarch_base_libdir}/modules/${KV}/extra
+	install -d ${D}${sysconfdir}/init.d/
+	install -m 0755 ${WORKDIR}/loadmodules.sh ${D}${sysconfdir}/init.d/loadmodules
 }
