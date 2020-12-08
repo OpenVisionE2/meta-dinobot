@@ -1,6 +1,6 @@
 require dinobot-grab.inc
 
-COMPATIBLE_MACHINE = "^(vipers|viper4kv20)$"
+COMPATIBLE_MACHINE = "^(vipersingle|viper4kv20)$"
 
 SRCDATE = "20200828"
 
