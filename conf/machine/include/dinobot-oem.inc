@@ -17,7 +17,6 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	kernel-module-ehci-platform \
 	kernel-module-ohci-platform \
 	dinobot-pvr \
-	dinobot-lib-helper \
 	dinobot-libs-${MACHINETYPE} \
 	kernel-module-extrawlan-rtl8192eu \
 	firmware-rtl8192eu \
