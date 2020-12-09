@@ -8,7 +8,7 @@ do_install_append() {
 	install -m 0644 ${S}/brcmfmac4339-sdio.txt ${D}${nonarch_base_libdir}/firmware/brcm
 }
 
-FILES_${PN} += "/lib/firmware/brcm"
+FILES_${PN} += "${nonarch_base_libdir}/firmware/brcm"
 
 require dinobot-dvb-modules.inc
 

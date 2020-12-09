@@ -26,9 +26,6 @@ FILES_${PN} += "${nonarch_base_libdir}/modules/${KV}/extra ${bindir}/komession $
 do_compile() {
 }
 
-do_populate_sysroot() {
-}
-
 do_package_qa() {
 }
 
@@ -46,4 +43,6 @@ do_install() {
 	install -m 0755  ${S}/load ${D}${nonarch_base_libdir}/modules/${KV}/extra
 	install -d ${D}${sysconfdir}/init.d/
 	install -m 0755 ${WORKDIR}/loadmodules.sh ${D}${sysconfdir}/init.d/loadmodules
+	install -d ${D}${sysconfdir}/modules-load.d
+	echo "hi_media" >> ${D}${sysconfdir}/modules-load.d/_${MACHINE}.conf
 }

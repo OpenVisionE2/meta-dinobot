@@ -9,7 +9,7 @@ do_install_append() {
 	install -m 0644 ${WORKDIR}/*.conf ${D}${sysconfdir}/modules-load.d
 }
 
-FILES_${PN} += "/lib/firmware/brcm"
+FILES_${PN} += "${nonarch_base_libdir}/firmware/brcm"
 
 require dinobot-dvb-modules2.inc
 

@@ -19,12 +19,9 @@ inherit update-rc.d
 
 INHIBIT_PACKAGE_STRIP = "1"
 
-FILES_${PN} += "${sysconfdir}/modules-load.d/_${MACHINE}.conf ${nonarch_base_libdir}/modules/${KV}/extra ${bindir}/komession ${sysconfdir}/init.d"
+FILES_${PN} += "${nonarch_base_libdir}/modules/${KV}/extra ${bindir}/komession ${sysconfdir}/init.d ${sysconfdir}/modules-load.d"
 
 do_compile() {
-}
-
-do_populate_sysroot() {
 }
 
 do_package_qa() {
