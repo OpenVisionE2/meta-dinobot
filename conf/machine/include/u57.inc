@@ -15,10 +15,6 @@ SDCARDIMG = "no"
 
 MACHINE_FEATURES += "blindscan-dvbs 7segment hiaccel RCA"
 
-IMAGEDIR = "amiko/${MACHINETYPE}"
-
 STB_PLATFORM = "${MACHINETYPE}"
 
 EXTRA_ALSA = "mv200"
-
-RCNAME = "amiko6"
