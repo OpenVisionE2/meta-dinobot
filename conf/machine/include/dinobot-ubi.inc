@@ -11,6 +11,7 @@ IMAGE_CMD_ubi_append = " \
 	cp -f ${DEPLOY_DIR_IMAGE}/uImage ${DEPLOY_DIR_IMAGE}/${MACHINE}/${IMAGEDIR}/${KERNEL_FILE}; \
 	echo "${IMAGE_NAME}" > ${DEPLOY_DIR_IMAGE}/${MACHINE}/${IMAGEDIR}/imageversion; \
 	echo "rename this file to 'force' to force an update without confirmation" > ${DEPLOY_DIR_IMAGE}/${MACHINE}/${IMAGEDIR}/noforce; \
+	echo "https://forum.openvision.tech/app.php/donate" > ${DEPLOY_DIR_IMAGE}/${MACHINE}/${IMAGEDIR}/donate.txt; \
 	rm -f ${DEPLOY_DIR_IMAGE}/*.zip; \
 	cd ${DEPLOY_DIR_IMAGE}/${MACHINE}; \
 	zip -r ../${IMAGE_NAME}_usb.zip *; \

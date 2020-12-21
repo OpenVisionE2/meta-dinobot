@@ -21,6 +21,7 @@ IMAGE_CMD_dinobotemmc_append = " \
 	bzip2 ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}/rootfs.tar; \
 	cp -f ${DEPLOY_DIR_IMAGE}/uImage ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}/${KERNEL_FILE}; \
 	echo ${IMAGE_NAME} > ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}/imageversion; \
+	echo "https://forum.openvision.tech/app.php/donate" > ${DEPLOY_DIR_IMAGE}/${IMAGEDIR}/donate.txt; \
 	rm -f ${DEPLOY_DIR_IMAGE}/*.zip; \
 	cd ${DEPLOY_DIR_IMAGE}; \
 	zip ${IMAGE_NAME}_usb.zip ${IMAGEDIR}/*; \
