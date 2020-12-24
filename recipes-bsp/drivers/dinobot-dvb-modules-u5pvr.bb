@@ -1,6 +1,6 @@
 SRCDATE = "20180427"
 
-KOFILES = "kds mali_kbase hi_dbe hi_tuner hi_sci hi_pmoc tntfs"
+KOFILES = "kds mali_kbase hi_dbe hi_tuner hi_sci hi_pmoc"
 
 do_install_append() {
 	install -d ${D}${nonarch_base_libdir}/firmware/brcm
