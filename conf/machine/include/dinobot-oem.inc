@@ -25,7 +25,6 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 	firmware-rt8188fu \
 	${@bb.utils.contains('MACHINE_FEATURES', 'emmc', 'dinobot-resizerootfs' , '', d)} \
 	dinobot-partitions-${SOC_FAMILY} \
-	gstreamer1.0-plugin-dvbmediasink \
 	dinobot-dvb-modules-${MACHINETYPE} \
 	dinobot-libs-${MACHINETYPE} \
 	dinobot-hihalt-${MACHINETYPE} \
