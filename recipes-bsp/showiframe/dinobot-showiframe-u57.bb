@@ -1,6 +1,6 @@
 require dinobot-showiframe.inc
 
-COMPATIBLE_MACHINE = "^(vipersingle|viper4kv20|iziboxelite4k)$"
+COMPATIBLE_MACHINE = "^(vipersingle|viper4kv20|iziboxelite4k|dinobot4ktwin)$"
 
 SRCDATE = "20200828"
 

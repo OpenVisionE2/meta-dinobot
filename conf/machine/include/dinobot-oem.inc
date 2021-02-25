@@ -52,4 +52,4 @@ DEPENDS_append_pn-enigma2 = " dinobot-libs-${MACHINETYPE} "
 
 BLINDSCAN_BINARY = "dinobot-blindscan"
 
-RCNAME ?= "dinobot"
+RCNAME ?= "dinobot1"
