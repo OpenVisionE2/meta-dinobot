@@ -1,7 +1,7 @@
 require conf/license/license-gplv2.inc
 
 do_install() {
-    install -d ${D}${sysconfdir}/init.d
+    install -d ${D}${INIT_D_DIR}
     install -d ${D}${sysconfdir}/rcS.d
     echo "#!/bin/sh" > ${WORKDIR}/cpu-helper.sh
     echo "echo userspace > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor" >> ${WORKDIR}/cpu-helper.sh

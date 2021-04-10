@@ -19,7 +19,7 @@ inherit update-rc.d
 
 INHIBIT_PACKAGE_STRIP = "1"
 
-FILES_${PN} += "${nonarch_base_libdir}/modules/${KV}/extra ${bindir}/komession ${sysconfdir}/init.d ${sysconfdir}/modules-load.d"
+FILES_${PN} += "${nonarch_base_libdir}/modules/${KV}/extra ${bindir}/komession ${INIT_D_DIR} ${sysconfdir}/modules-load.d"
 
 do_compile() {
 }
@@ -41,7 +41,7 @@ do_install() {
 		install -m 0644 ${S}/$i.ko ${D}${nonarch_base_libdir}/modules/${KV}/extra
 		echo $i >> ${D}${sysconfdir}/modules-load.d/_${MACHINE}.conf
 	done
-	install -d ${D}${sysconfdir}/init.d/
+	install -d ${D}${INIT_D_DIR}/
 	echo "#!/bin/sh" > ${S}/zload-dinobot
 	echo "komession" >> ${S}/zload-dinobot
 	echo "echo 2097152 > /proc/sys/net/core/rmem_max" >> ${S}/zload-dinobot
@@ -50,5 +50,5 @@ do_install() {
 	echo "echo 8192 > /proc/sys/vm/min_free_kbytes" >> ${S}/zload-dinobot
 	echo "echo interactive > /sys/devices/system/cpu/cpu0/cpufreq/scaling_governor" >> ${S}/zload-dinobot
 	echo "echo 200000 > /sys/devices/system/cpu/cpufreq/interactive/timer_rate" >> ${S}/zload-dinobot
-	install -m 0755 ${S}/zload-dinobot ${D}${sysconfdir}/init.d
+	install -m 0755 ${S}/zload-dinobot ${D}${INIT_D_DIR}
 }

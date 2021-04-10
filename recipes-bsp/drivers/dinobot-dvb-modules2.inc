@@ -21,7 +21,7 @@ inherit update-rc.d
 
 INHIBIT_PACKAGE_STRIP = "1"
 
-FILES_${PN} += "${nonarch_base_libdir}/modules/${KV}/extra ${bindir}/komession ${sysconfdir}/init.d ${sysconfdir}/modules-load.d"
+FILES_${PN} += "${nonarch_base_libdir}/modules/${KV}/extra ${bindir}/komession ${INIT_D_DIR} ${sysconfdir}/modules-load.d"
 
 do_compile() {
 }
@@ -41,8 +41,8 @@ do_install() {
 	install -m 0644 ${S}/dvbmodule ${D}${nonarch_base_libdir}/modules/${KV}/extra
 	install -m 0755 ${S}/komession ${D}${bindir}
 	install -m 0755  ${S}/load ${D}${nonarch_base_libdir}/modules/${KV}/extra
-	install -d ${D}${sysconfdir}/init.d/
-	install -m 0755 ${WORKDIR}/loadmodules.sh ${D}${sysconfdir}/init.d/loadmodules
+	install -d ${D}${INIT_D_DIR}/
+	install -m 0755 ${WORKDIR}/loadmodules.sh ${D}${INIT_D_DIR}/loadmodules
 	install -d ${D}${sysconfdir}/modules-load.d
 	echo "hi_media" >> ${D}${sysconfdir}/modules-load.d/_${MACHINE}.conf
 }
