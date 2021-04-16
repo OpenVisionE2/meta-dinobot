@@ -39,7 +39,6 @@ PREFERRED_RPROVIDER_aio-grab = "dinobot-grab-${MACHINETYPE}"
 PREFERRED_VERSION_linux-dinobot = "${KERNELVERSION}"
 PREFERRED_VERSION_directfb = "1.7.7"
 
-DVBPROVIDER = "kernel"
 DVBSKYPROVIDER = "kernel"
 
 require conf/machine/include/soc-family.inc
