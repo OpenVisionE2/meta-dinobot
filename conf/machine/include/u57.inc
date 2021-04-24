@@ -18,3 +18,7 @@ MACHINE_FEATURES += "blindscan-dvbs 7segment hiaccel RCA"
 STB_PLATFORM = "${MACHINETYPE}"
 
 EXTRA_ALSA = "mv200"
+
+MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
+	dinobot-opengl-${SOC_FAMILY} \
+	"

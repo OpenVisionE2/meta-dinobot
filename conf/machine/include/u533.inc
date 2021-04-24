@@ -19,3 +19,7 @@ MACHINE_FEATURES += "7segment hiaccel"
 IMAGEDIR = "e2/update"
 
 STB_PLATFORM = "${MACHINETYPE}"
+
+MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
+	dinobot-opengl-${SOC_FAMILY} \
+	"

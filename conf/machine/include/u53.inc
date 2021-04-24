@@ -21,3 +21,7 @@ MACHINE_FEATURES += "7segment dvb-c blindscan-dvbs textlcd hiaccel"
 IMAGEDIR = "dinobot/${MACHINETYPE}"
 
 STB_PLATFORM = "${MACHINETYPE}"
+
+MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
+	dinobot-opengl-${SOC_FAMILY} \
+	"

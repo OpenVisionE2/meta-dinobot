@@ -13,6 +13,7 @@ require conf/machine/include/dinobot-cortexa15.inc
 require conf/machine/include/dinobot-emmc.inc
 
 MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
+	dinobot-opengl-${SOC_FAMILY} \
 	kernel-module-brcmutil \
 	kernel-module-brcmfmac \
 	"
