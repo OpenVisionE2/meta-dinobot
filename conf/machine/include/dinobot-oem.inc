@@ -40,7 +40,6 @@ PREFERRED_PROVIDER_virtual/blindscan-dvbs = "dinobot-blindscan-${MACHINETYPE}"
 PREFERRED_RPROVIDER_showiframe = "dinobot-showiframe-${MACHINETYPE}"
 PREFERRED_RPROVIDER_aio-grab = "dinobot-grab-${MACHINETYPE}"
 PREFERRED_VERSION_linux-dinobot = "${KERNELVERSION}"
-PREFERRED_VERSION_directfb = "1.7.7"
 
 
 require conf/machine/include/soc-family.inc
