@@ -11,7 +11,7 @@ require conf/machine/include/dinobot-emmc.inc
 
 MACHINETYPE = "u5"
 
-MACHINE_FEATURES += "7segment blindscan-dvbs textlcd hiaccel RCA"
+MACHINE_FEATURES += "7segment blindscan-dvbs textlcd hiaccel RCA kodi19"
 
 IMAGEDIR = "dinobot/${MACHINETYPE}"
 

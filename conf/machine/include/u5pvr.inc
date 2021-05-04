@@ -25,7 +25,7 @@ MTD_ROOTFS = "mmcblk0p13"
 
 SDCARDIMG = "no"
 
-MACHINE_FEATURES += "7segment dvb-c textlcd RCA"
+MACHINE_FEATURES += "7segment dvb-c textlcd RCA kodi19"
 
 IMAGEDIR = "dinobot/${MACHINETYPE}"
 

@@ -16,7 +16,7 @@ MTD_ROOTFS = "mmcblk0p13"
 
 SDCARDIMG = "no"
 
-MACHINE_FEATURES += "7segment dvb-c blindscan-dvbs textlcd hiaccel RCA"
+MACHINE_FEATURES += "7segment dvb-c blindscan-dvbs textlcd hiaccel RCA kodi19"
 
 STB_PLATFORM = "${MACHINETYPE}"
 

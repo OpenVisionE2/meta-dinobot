@@ -16,7 +16,7 @@ MTD_ROOTFS = "mmcblk0p10"
 
 SDCARDIMG = "no"
 
-MACHINE_FEATURES += "blindscan-dvbs 7segment textlcd hiaccel RCA"
+MACHINE_FEATURES += "blindscan-dvbs 7segment textlcd hiaccel RCA kodi19"
 
 IMAGEDIR = "axas/axasc4k"
 

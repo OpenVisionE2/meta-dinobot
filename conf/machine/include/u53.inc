@@ -16,7 +16,7 @@ MTD_ROOTFS = "mmcblk0p13"
 
 SDCARDIMG = "no"
 
-MACHINE_FEATURES += "7segment dvb-c blindscan-dvbs textlcd hiaccel"
+MACHINE_FEATURES += "7segment dvb-c blindscan-dvbs textlcd hiaccel kodi19"
 
 IMAGEDIR = "dinobot/${MACHINETYPE}"
 

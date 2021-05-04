@@ -13,7 +13,7 @@ MACHINETYPE = "u57"
 
 SDCARDIMG = "no"
 
-MACHINE_FEATURES += "blindscan-dvbs 7segment hiaccel RCA"
+MACHINE_FEATURES += "blindscan-dvbs 7segment hiaccel RCA kodi19"
 
 STB_PLATFORM = "${MACHINETYPE}"
 

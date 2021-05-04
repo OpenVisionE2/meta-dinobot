@@ -33,9 +33,9 @@ MACHINE_ESSENTIAL_EXTRA_RDEPENDS += "\
 MACHINE_FEATURES += "videoenhancement switchoff hdmicec blindscan-tbs alsa multitranscoding hisil HDMI"
 
 PREFERRED_PROVIDER_virtual/kernel = "linux-dinobot"
-PREFERRED_PROVIDER_virtual/egl = "dinobot-opengl-${SOC_FAMILY}" 
-PREFERRED_PROVIDER_virtual/libgles1 = "dinobot-opengl-${SOC_FAMILY}"
-PREFERRED_PROVIDER_virtual/libgles2 = "dinobot-opengl-${SOC_FAMILY}"
+PREFERRED_PROVIDER_virtual/egl ?= "dinobot-opengl-${SOC_FAMILY}" 
+PREFERRED_PROVIDER_virtual/libgles1 ?= "dinobot-opengl-${SOC_FAMILY}"
+PREFERRED_PROVIDER_virtual/libgles2 ?= "dinobot-opengl-${SOC_FAMILY}"
 PREFERRED_PROVIDER_virtual/blindscan-dvbs = "dinobot-blindscan-${MACHINETYPE}"
 PREFERRED_RPROVIDER_showiframe = "dinobot-showiframe-${MACHINETYPE}"
 PREFERRED_RPROVIDER_aio-grab = "dinobot-grab-${MACHINETYPE}"
@@ -53,3 +53,5 @@ DEPENDS_append_pn-enigma2 = " dinobot-libs-${MACHINETYPE} "
 BLINDSCAN_BINARY = "dinobot-blindscan"
 
 RCNAME ?= "dinobot1"
+
+REFERRED_PROVIDER_virtual/kodi = "stb-kodi-${STB_PLATFORM}"

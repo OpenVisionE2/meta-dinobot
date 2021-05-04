@@ -14,7 +14,7 @@ MTD_ROOTFS = "mmcblk0p13"
 
 SDCARDIMG = "no"
 
-MACHINE_FEATURES += "7segment hiaccel"
+MACHINE_FEATURES += "7segment hiaccel kodi19"
 
 IMAGEDIR = "e2/update"
 

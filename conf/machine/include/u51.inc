@@ -14,7 +14,7 @@ MACHINETYPE = "u51"
 MTD_KERNEL = "mmcblk0p9"
 MTD_ROOTFS = "mmcblk0p10"
 
-MACHINE_FEATURES += "7segment blindscan-dvbs textlcd hiaccel RCA"
+MACHINE_FEATURES += "7segment blindscan-dvbs textlcd hiaccel RCA kodi19"
 
 STB_PLATFORM = "${MACHINETYPE}"
 
