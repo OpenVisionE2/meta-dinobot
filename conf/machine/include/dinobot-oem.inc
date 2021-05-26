@@ -55,3 +55,5 @@ BLINDSCAN_BINARY = "dinobot-blindscan"
 RCNAME ?= "dinobot1"
 
 REFERRED_PROVIDER_virtual/kodi = "stb-kodi-${STB_PLATFORM}"
+
+DISPLAY_BRAND ?= "Vivant"
