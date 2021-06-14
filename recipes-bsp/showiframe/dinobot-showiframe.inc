@@ -17,8 +17,11 @@ SRC_URI = "http://source.mynonpublic.com/dinobot/${MACHINETYPE}-showiframe-${SRC
 S = "${WORKDIR}"
 
 do_install() {
-    install -d ${D}${bindir}
-    install -m 0755 ${S}/showiframe ${D}${bindir}
+	install -d ${D}${bindir}
+	install -m 0755 ${S}/showiframe ${D}${bindir}
+	if [ -e ${S}/dinobotplayer ]; then
+		install -m 0755 ${S}/dinobotplayer ${D}${bindir}
+	fi
 }
 
 do_package_qa() {
